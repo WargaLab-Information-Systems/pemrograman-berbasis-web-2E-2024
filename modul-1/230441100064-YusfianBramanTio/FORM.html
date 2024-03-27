@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Yusfian Braman Tio</title>
+    </head>
+    <body style="color: aliceblue; background-color: black;">
+        <h1 align="center" font:tahoma; style="background-color: rgb(205, 143, 50);" >Isi Data Anda</h1><hr>
+        <ul>
+        <a href="CV.html" style="display: block; padding: 5px; color:rgb(255, 0, 72);">Home</a>
+        <a href="TABEL.html" style="display:block; padding:5px; color:rgb(255, 0, 72);">TabelTeman</a>
+        <a href="FORM.html" style="display:block; padding:5px; color:rgb(255, 0, 72);" >Form input</a>
+        </ul> 
+     <hr>
+        <form>
+            <fieldset>
+              <label for="nama">Nama:</label><br>
+              <input type="text" id="nama" name="nama"><br>
+            
+              <label for="nim">Nim:</label><br>
+              <input type="number" id="nim" name="nim"><br>
+            
+              <label for="email"> Email:</label><br>
+              <input type="email" id="email" name="email" ><br>
+             
+              <label for="no_telp">No. Telepon:</label><br>
+              <input type="tel" id="no_telp" name="no_telp" ><br>
+              
+              <label for="alamat">Alamat:</label><br>
+              <textarea id="alamat" name="alamat"></textarea><br>
+             
+              <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+              <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki-laki" >
+              <label for="laki_laki">Laki-laki</label><br>
+              <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+              <label for="perempuan">Perempuan</label><br>
+              
+              <label for="tgl_lahir">Tanggal Lahir:</label><br>
+              <input type="date" id="tgl_lahir" name="tgl_lahir"><br>
+          
+              <label for="angkatan">Angkatan:</label>
+              <select id="angkatan" name="angkatan">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+              </select><br>
+              <label for="hobby">Hobby :</label>
+              <input type="checkbox" id="hobby" name="hobby" value="Coding">
+              <label for="coding">Coding</label>
+              <input type="checkbox" id="hobby" name="hobby" value="Futsal">
+              <label for="Futsal">Futsal</label>
+              <input type="checkbox" id="hobby" name="hobby" value="Basket">
+              <label for="Basket">Basket</label><br>
+              <input type="submit" value="Kirim">
+              <input type="reset" value="reset">
+            </fieldset>
+          </form>
+    </body>
+</html>
