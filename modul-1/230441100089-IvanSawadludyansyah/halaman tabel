@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Mahasiswa</title>
+</style>
+</head>
+
+<body bgcolor="lightgrey">
+<table border="1" cellpadding="5" cellspacing="0" align="center">
+  <thead>
+    <tr>
+      <th>Nama</th>
+      <th>NIM</th>
+      <th>Asprak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ivan Sawadludyansyah</td>
+      <td>230441100089</td>
+      <td rowspan="3">Ardiansyah Gofur Nurichsan</td>
+    </tr>
+    <tr>
+      <td>Muhammad Dias Mukholif</td>
+      <td>230441100094</td>
+    </tr>
+    <tr>
+      <td>Nurul Hasanah</td>
+      <td>230441100136</td>
+    </tr>
+    <tr>
+      <td>Agus Wedi</td>
+      <td>230441100034</td>
+      <td rowspan="3">M.Badrut Tamam</td>
+    </tr>
+    <tr>
+      <td>Yusfian Braman Tio</td>
+      <td>230441100089</td>
+    </tr>
+    <tr>
+      <td>Yuliatin Agustina</td>
+      <td>230441100013</td>
+    </tr>
+
+
+  <div align="center">
+  <a href="biodata.html">Halaman Sebeliumnya</a>
+  <a href="form.html">Halaman Selanjutnya</a>
+  <br><br><br><br>
+</div>
+  </tbody>
+</table>
+
+</body>
+</html>

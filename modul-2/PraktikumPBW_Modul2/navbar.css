@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5ab666;
+}
+
+ul {
+    list-style: none;
+    background-color:black;
+    text-align: left;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background: black;
+    margin: 2px 0px;
+}
+
+ul li ul.dropdown{
+    width: auto;
+    background: aliceblue;
+    position: absolute;
+    display: none;
+}
+
+ul li a:hover{
+    background: rgb(112, 110, 110);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+img.utama {
+    margin: auto;
+    display: block;
+    padding-top: 40pX;
+    width: 80%;
+    height: 70%;
+}
+
+main {
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.animal-info {
+    padding-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.animal {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+    background-color: rgb(213, 174, 78);
+}
+
+.animal img {
+    width: 100%;
+    height: auto;
+}
+
+.animal p {
+    margin-top: 10px;
+}
