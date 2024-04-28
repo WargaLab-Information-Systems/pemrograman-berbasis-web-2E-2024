@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        .calculator-container {margin: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 5px;}
+        .calculator-container input[type=number] {width: 100px; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;}
+        .calculator-container select {width: 100px; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;}
+        .calculator-container button {padding: 10px; margin: 10px 0; border: none; border-radius: 5px; cursor: pointer;}
+        .calculator-container button:hover {background-color: #ddd;}
+        table {border-collapse: collapse; width: 100%;}
+        th, td {border: 1px solid #ddd; padding: 8px; text-align: left;}
+        th {background-color: #f2f2f2;}
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: #7b572a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <div class="calculator-container">
+        <input type="number" id="num1" placeholder="Masukkan angka 1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="number" id="num2" placeholder="Masukkan angka 2">
+        <button onclick="calculate()">Hitung</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama User</th>
+                    <th>Angka 1</th>
+                    <th>Operator</th>
+                    <th>Angka 2</th>
+                    <th>Hasil Perhitungan</th>
+                </tr>
+            </thead>
+            <tbody id="calculationTableBody">
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operator = document.getElementById("operator").value;
+            var result;
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 != 0) {
+                        result = num1 / num2;
+                    } else {
+                        alert("Division by zero is not allowed.");
+                        return;
+                    }
+                    break;
+                case '%':
+                    if (num2 != 0) {
+                        result = num1 % num2;
+                    } else {
+                        alert("Modulus by zero is not allowed.");
+                        return;
+                    }
+                    break;
+            }
+            var tableBody = document.getElementById("calculationTableBody");
+            var newRow = tableBody.insertRow();
+            var cellNo = newRow.insertCell(0);
+            var cellName = newRow.insertCell(1);
+            var cellNum1 = newRow.insertCell(2);
+            var cellOperator = newRow.insertCell(3);
+            var cellNum2 = newRow.insertCell(4);
+            var cellResult = newRow.insertCell(5);
+            cellNo.innerHTML = tableBody.rows.length; 
+            var username = sessionStorage.getItem('username');
+            cellName.innerHTML = username;
+            cellNum1.innerHTML = num1;
+            cellOperator.innerHTML = operator;
+            cellNum2.innerHTML = num2;
+            cellResult.innerHTML = result;
+        }
+    </script>
+</body>
+</html>
