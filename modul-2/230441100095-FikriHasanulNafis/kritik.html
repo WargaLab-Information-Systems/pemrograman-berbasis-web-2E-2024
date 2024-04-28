@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kritik dan Saran</title>
+<style>
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Beranda</a></li>
+            <li class="dropdown">
+                <a class="drop-btn">Keterangan</a>
+                    <div class="dropdown-content">
+                    <a href="Penyu.html">Penyu</a>
+                    <a href="ikannemo.html">Ikan Nemo</a>
+                    <a href="penguin.html">Penguin</a>
+                    </div>
+            </li>
+            <li><a href="kritik.html">Kritik&Saran</a></li>
+        </ul>
+    </nav>
+<h2>Formulir Kritik dan Saran</h2>
+
+<table border="1px">
+    <tr>
+        <th>Nama</th>
+        <td><input type="text" id="nama" name="nama"></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><input type="email" id="email" name="email"></td>
+    </tr>
+    <tr>
+        <th>Kritik/Saran</th>
+        <td><textarea id="kritik_saran" name="kritik_saran" rows="4" cols="50"></textarea></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="submit" value="Kirim"></td>
+    </tr>
+</table>
+</body>
+</html>

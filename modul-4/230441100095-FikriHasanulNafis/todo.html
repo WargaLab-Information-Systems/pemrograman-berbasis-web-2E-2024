@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="home">Home</a>
+    <a href="#" class="home">Beranda</a>
+    <div class="dropdown">
+      <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Buah-buahan</button>
+      <div id="buahDropdown" class="dropdown-content">
+        <a href="#">Apel</a>
+        <a href="#">Pisang</a>
+        <a href="#">Jeruk</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Sayuran</button>
+      <div id="sayurDropdown" class="dropdown-content">
+        <a href="#">Bayam</a>
+        <a href="#">Wortel</a>
+        <a href="#">Tomat</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="body">
+  <h1 class="title">
+    To do list App
+  </h1>
+
+  <div class="todo-list">
+    <div class="list-head">
+      <input type="text" class="entered-list">
+      <button class="add-list">Add</button>
+    </div>
+
+    <div class="tasks">
+      <div class="item">
+        <p></p>
+        <div class="item-btn">
+          <i class="fa-solid fa-pen-to-square"></i>
+           <i class="fa-solid fa-xmark"></i>
+           <i class="fa-solid fa-pencil-alt"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="todo.js"></script>
+</body>
+</html>
