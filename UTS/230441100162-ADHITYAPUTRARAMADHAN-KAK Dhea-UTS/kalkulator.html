@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Calculators</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="calculatorForm">
+          <div class="form-group">
+            <label for="number1">Angka 1</label>
+            <input type="number" id="number1" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="operator">Operator</label>
+            <select id="operator" class="form-control">
+              <option value="+">+</option>
+              <option value="-">-</option>
+              <option value="*">*</option>
+              <option value="/">/</option>
+              <option value="%">%</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="number2">Angka 2</label>
+            <input type="number" id="number2" class="form-control">
+          </div>
+          <button type="button" id="calculate" class="btn btn-primary btn-block">Hitung</button>
+        </form>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Nama User</th>
+              <th scope="col">Angka 1</th>
+              <th scope="col">Operator</th>
+              <th scope="col">Angka 2</th>
+              <th scope="col">Hasil</th>
+            </tr>
+          </thead>
+          <tbody id="calculationHistory"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+</html>
