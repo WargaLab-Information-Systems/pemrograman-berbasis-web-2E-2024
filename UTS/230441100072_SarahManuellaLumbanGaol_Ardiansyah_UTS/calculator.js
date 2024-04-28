@@ -39,7 +39,7 @@ document
     var cellResult = row.insertCell(5);
 
     cellNo.innerHTML = table.rows.length - 1;
-    cellUsername.innerHTML = sessionStorage.getItem("username");
+    cellUsername.innerHTML = sessionStorage.getItem("floatingInput");
     cellNumber1.innerHTML = number1;
     cellOperator.innerHTML = operator;
     cellNumber2.innerHTML = number2;
