@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2304.41.1000.7.2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Kalkulator<sub>kecilkecilan</sub></h2>
+      <form id="calculator-form">
+        <input
+          type="number"
+          id="number1"
+          placeholder="Masukkan Angka ke-1"
+          required />
+        <select id="operator">
+          <option value="+">+ (Penjumlahan)</option>
+          <option value="-">- (Pengurangan)</option>
+          <option value="*">* (Perkalian)</option>
+          <option value="/">/ (Pembagian)</option>
+          <option value="%">% (Sisa Bagi)</option>
+        </select>
+        <input
+          type="number"
+          id="number2"
+          placeholder="Masukkan Angka ke-2"
+          required />
+        <button type="submit">=</button>
+      </form>
+      <div id="result-container">
+        <h3>Hasil</h3>
+        <table id="result-table">
+          <tr>
+            <th>No.</th>
+            <th>Username</th>
+            <th>Angka 1</th>
+            <th>Operator</th>
+            <th>Angka 2</th>
+            <th>Hasil</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
