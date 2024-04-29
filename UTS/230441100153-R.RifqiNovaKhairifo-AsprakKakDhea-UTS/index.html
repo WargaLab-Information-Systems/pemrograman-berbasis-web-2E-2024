@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+     <div class="background-container">
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="error-message" id="error-message" style="display: none;">Nama pengguna atau kata sandi salah.</div>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="button" onclick="handleLogin()">Login</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
