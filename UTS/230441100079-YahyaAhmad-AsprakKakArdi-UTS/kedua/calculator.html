@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: 'Poppins', sans-serif;
+      }
+      body {
+        background-color: #f8f9fa;
+        padding: 20px;
+      }
+      .calculator-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .result-table {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container calculator-container">
+      <h2 class="text-center mb-4">Kalkulator</h2>
+      <div class="form-group">
+        <label for="number1" style="margin-top: 10px">Angka 1 :</label>
+        <input type="number" class="form-control" id="number1" required placeholder="Masukkan angka pertama" />
+      </div>
+      <div class="form-group">
+        <label for="operator" style="margin-top: 10px">Operator:</label>
+        <select class="form-control" id="operator">
+          <option value="+">Penjumlahan</option>
+          <option value="-">Pengurangan</option>
+          <option value="*">Perkalian</option>
+          <option value="/">Pembagian</option>
+          <option value="%">Modulus</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="number2" style="margin-top: 10px">Angka 2 :</label>
+        <input type="number" class="form-control" id="number2" required placeholder="Masukkan angka kedua" />
+      </div>
+      <button type="button" class="btn btn-dark btn-block" onclick="calculate()" style="margin-top: 10px">Hitung</button>
+    </div>
+
+    <table class="table table-bordered result-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Nama User</th>
+          <th>Angka 1</th>
+          <th>Operator</th>
+          <th>Angka 2</th>
+          <th>Hasil</th>
+        </tr>
+      </thead>
+      <tbody id="resultTableBody"></tbody>
+    </table>
+
+    <script>
+      function calculate() {
+        var number1 = parseFloat(document.getElementById('number1').value);
+        var operator = document.getElementById('operator').value;
+        var number2 = parseFloat(document.getElementById('number2').value);
+        var result = 0;
+
+        switch (operator) {
+          case '+':
+            result = number1 + number2;
+            break;
+          case '-':
+            result = number1 - number2;
+            break;
+          case '*':
+            result = number1 * number2;
+            break;
+          case '/':
+            if (number2 === 0) {
+              alert('Pembagian dengan nol tidak diperbolehkan');
+              return;
+            }
+            result = number1 / number2;
+            break;
+          case '%':
+            result = number1 % number2;
+            break;
+        }
+
+        var username = localStorage.getItem('username') || 'Guest';
+        var resultTableBody = document.getElementById('resultTableBody');
+        var newRow = resultTableBody.insertRow(-1);
+        newRow.insertCell(0).textContent = resultTableBody.rows.length;
+        newRow.insertCell(1).textContent = username;
+        newRow.insertCell(2).textContent = number1;
+        newRow.insertCell(3).textContent = operator;
+        newRow.insertCell(4).textContent = number2;
+        newRow.insertCell(5).textContent = result;
+      }
+
+      // Simulasi login
+      localStorage.setItem('username', 'user');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

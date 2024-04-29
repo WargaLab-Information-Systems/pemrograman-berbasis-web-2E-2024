@@ -1,0 +1,24 @@
+body {
+    background-color: navy;
+    color: white;
+}
+
+.calculator {
+    margin-left: 45px;
+}
+
+.col-12 {
+    background-color: orange;
+    padding: 15px;
+}
+
+.btn {
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+}
+
+.col-12{
+    border-radius: 30px;
+    padding: 20px;
+}
