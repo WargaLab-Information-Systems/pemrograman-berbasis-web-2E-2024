@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <link rel="stylesheet" href="DropDown.css"> 
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">WELCOME TO OUR PRODUK</a></li>
+            </ul>
+            <img src="foto.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="foto.png">
+                    <h2>Zahira Malika</h2>
+                </div>
+                <hr>
+
+                <a href="profil.html" class="sub-menu-link">
+                    <img src="profile.png">
+                    <p onclick="tekan()">Profil Owner</p>
+                    <span>></span>
+                
+                    <script>
+                        function tekan(){
+                            window.location.href="profil.html";
+                        }
+                    </script>
+                </a>
+
+                <a href="kontak.html" class="sub-menu-link">
+                    <img src="help.png">
+                    <p onclick="tekan()">Social Media</p>
+                    <span>></span>
+
+                    <script>
+                        function tekan(){
+                            window.location.href="kontak.html";
+                        }
+                    </script>
+                </a>
+
+                <a href="CommingSoon.html" class="sub-menu-link">
+                    <img src="logout.png">
+                    <p onclick="tekan()">Comming Soon</p>
+                    <span>></span>
+
+                    <script>
+                        function tekan(){
+                            window.location.href="CommingSoon.html";
+                        }
+                    </script>
+                </a>
+            </div>
+            </div>
+        </nav>
+        <section class="produk">
+            <h1>---- COMMING SOON ----</h1>
+            <div class="produk-item">
+                <img src="foto1.jpg">
+                <h3>HIJAB 1</h3>
+            </div>
+            <div class="produk-item">
+                <img src="foto2.jpg" >
+                <h3>HIJAB 2</h3>
+            </div>
+            <div class="produk-item">
+                <img src="foto3.jpg" >
+                <h3>HIJAB 3</h3>
+            </div>
+        </section>
+
+        <section class="produk">
+            <div class="produk-item">
+                <img src="foto4.jpg" >
+                <h3>HIJAB 4</h3>
+            </div>
+            <div class="produk-item">
+                <img src="foto5.jpg"">
+                <h3>HIJAB 5</h3>
+            </div>
+            <div class="produk-item">
+                <img src="foto6.jpg" >
+                <h3>HIJAB 6</h3>
+            </div>
+        </section>
+
+        <section class="produk">
+            <div class="produk-item">
+                <img src="foto7.jpg" >
+                <h3>HIJAB 7</h3>
+            </div>
+            <div class="produk-item">
+                <img src="foto8.jpg" >
+                <h3>HIJAB 8</h3>
+            </div>
+            <div class="produk-item">
+                <img src="foto9.jpg" ">
+                <h3>HIJAB 9</h3>
+            </div>
+        </section>
+        
+    </div> 
+    
+
+
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+section {
+    padding-top: auto;
+}
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+table {
+    border-spacing: 40px;
+    border-collapse: separate;
+    width: 35%;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+.bordered {
+    border: 1px solid black;
+    background-color: #8b0606;
+    color: white;
+    
+}
