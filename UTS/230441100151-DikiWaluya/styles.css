@@ -1,0 +1,30 @@
+
+.container {
+    margin-top: 50px;
+  }
+  
+ 
+  #calculatorForm {
+    margin-bottom: 20px;
+  }
+  
+
+  .table {
+    width: 100%;
+  }
+  
+ 
+  .table th {
+    text-align: center;
+  }
+  
+
+  .table td {
+    text-align: center;
+  }
+  
+
+  .table tbody tr {
+    margin-bottom: 10px;
+  }
+  
