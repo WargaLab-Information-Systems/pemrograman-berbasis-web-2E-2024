@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <div class="body">
+    <h1 class="title">
+      To do list App
+    </h1>
+
+    <div class="todo-list">
+      <div class="list-head">
+        <input type="text" class="entered-list">
+        <button class="add-list">Add</button>
+      </div>
+
+      <div class="tasks">
+        <div class="item">
+          <p>APB</p>
+          <div class="item-btn">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-pencil-alt"></i>
+          </div>
+        </div>
+        <div class="item">
+          <p>PBO</p>
+          <div class="item-btn">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-pencil-alt"></i>
+          </div>
+        </div>
+        <div class="item">
+          <p>DMJ</p>
+          <div class="item-btn">
+            <!-- edit -->
+            <i class="fa-solid fa-pen-to-square"></i> 
+            <!-- hapus -->
+            <i class="fa-solid fa-xmark"></i>
+            <!-- checked -->
+            <i class="fa-solid fa-pencil-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+let input = document.querySelector('.entered-list');
+let addBtn = document.querySelector('.add-list');
+let tasks = document.querySelector('.tasks');
+
+//add new item to list
+addBtn.addEventListener('click', () => {
+  if (input.value.trim() != 0){
+    let newItem = document.createElement('li');
+    newItem.classList.add('item');
+    newItem.innerHTML = `
+    <p> ${input.value} </p>
+        <div class="item-btn">
+          <i class="fa-solid
+           fa-pen-to-square"></i>
+           <i class="fa-solid fa-xmark"></i>
+           <i class="fa-solid fa-pencil-alt"></i>
+        </div>
+    `
+    tasks.appendChild(newItem);
+    input.value = '';
+  }else{
+    alert('Please enter a task');
+  }
+})
+
+//delete item from the list
+tasks.addEventListener('click', (e) => {
+  if (e.target.classList.contains('fa-xmark')) {
+    e.target.parentElement.parentElement.remove();
+  }
+})
+//edit item
+tasks.addEventListener('click', (e) => {
+  if (e.target.classList.contains('fa-pencil-alt')) {
+    let newContent = prompt('Enter new content:');
+    if (newContent !== null && newContent.trim() !== '') {
+      e.target.parentElement.previousElementSibling.textContent = newContent;
+    }
+  }
+});
+
+//mark item as completed
+tasks.addEventListener('click', (e) =>{
+  if (e.target.classList.contains('fa-pen-to-square')) {
+    e.target.parentElement.parentElement.classList.toggle('completed');
+  }
+})
+  </script>
+</body>
+</html>

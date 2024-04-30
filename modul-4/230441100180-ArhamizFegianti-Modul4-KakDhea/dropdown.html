@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color:white;">
+
+<div class="navbar">
+  <a href="https://www.instagram.com/taylorswift?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Home</a>
+  <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=cc33f12d5d774b24">Spotify</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="reputation.html">Reputation</a>
+    <a href="lover.html">Lover</a>
+    <a href="1989.html">1989</a>
+  </div>
+  </div> 
+</div>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
+
+<div class="header">
+  <h1>TAYLOR SWIFT'S</h1>
+  <p>Albums.</p>
+</div>
+
+<table>
+  <tr>
+      <td>
+      <img
+      src="a1.jpg" 
+      height="360px"
+      />
+      </td>
+      <td>
+      <img src="a2.jpg"
+      height="360px"/>    
+      </td>
+      <td>
+      <img src="a3.jpg"
+      height="360px"/>      
+      </td>
+      <td>
+      <img src="a4.jpg"
+      height="360px"/>      
+      </td>
+  </tr>
+</table>
+
+</body>
+</html>
