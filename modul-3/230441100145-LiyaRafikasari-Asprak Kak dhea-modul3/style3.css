@@ -1,0 +1,45 @@
+footer {
+        background: linear-gradient(to right, rgb(10, 127, 169), white);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position:fixed ;
+        
+        bottom: 0;
+        width: 100%;
+      }
+      .container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+      }
+      .navbar{
+        background-color: rgba(137, 43, 226, 0.091);
+      }
+      .sloder-content{
+        height: 500px;
+        object-fit: cover;
+      }
+      .card-deck{
+        display:flex;
+        gap: 5rem;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        background-color: rgba(0, 255, 255, 0.421);
+      }
+      .card-body{
+        background-color: rgba(119, 255, 0, 0.178);
+      }
+      .header-card{
+        text-align: center;
+        margin-top:3rem;
+        font-weight: bold;
+        font-size: 30px;
+}
+body {
+  background-color: #d9f0ff;
+}
+body {
+  background-color: #d9f0ff;
+}
