@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>login</h2>
+    <form id="loginform">
+        <label for ="username"id="username">username</label>
+        <input type="text" name="username" id="username">
+        <label for ="pasword"id="pasword">pasword</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="login">
+
+        <script>
+            document.getElementById('loginform').
+            addEventListener('submit',function()){
+
+                var username = document.getElementById
+                ('username').value;
+                var password = document.getElementById
+                ('password').value;
+                if(username == "admin"&& password == "admin"){
+                    alert("login berhasil")
+
+                }else{
+                    alert("login gagal")
+                }
+            });
+            </scrip>
+             </form>
+    </body>
+    </html>

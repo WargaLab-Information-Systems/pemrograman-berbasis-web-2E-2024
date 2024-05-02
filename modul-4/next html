@@ -1,0 +1,54 @@
+// Fungsi untuk menambahkan elemen baru
+function newElemen() {
+    var inputValue = document.getElementById("myinput").value;
+    // ini digunakan menggambil niai yng di masukkan pengguna di idmyinput 
+    if (inputValue === '') {
+        alert("Judul kosong, coba lagi");
+        // memeriksa apakh input kosong,jka iy nntinya akan otomatis mengulang
+    } else {
+        var div = document.createElement("div");
+        div.className = "content";
+        // membuat elmen div dan memberikan ke kelas content
+        var h3 = document.createElement("h3");
+        var textNode = document.createTextNode(inputValue);
+        h3.appendChild(textNode);
+        div.appendChild(h3);
+
+        
+        // Tombol Edit
+        var btnEdit = document.createElement("p");
+        btnEdit.textContent = "Edit";
+        btnEdit.className = "edit";
+        btnEdit.onclick = function() {
+            var newText = prompt("Ubah nama: ", inputValue);
+            if (newText !== null && newText !== "") {
+                h3.textContent = newText;
+            }
+        };
+        // membuat elemen baru untuk tombol btnEdit,menambahkan teeks btnEdit,memerikan kekelas edit
+        div.appendChild(btnEdit);
+        
+        // Tombol Hapus
+        var btnHapus = document.createElement("p");
+        btnHapus.textContent = "Hapus";
+        btnHapus.className = "hapus";
+        btnHapus.onclick = function() {
+            div.remove();
+        };
+        div.appendChild(btnHapus);
+        
+        // Tombol Selesai
+        var btnSelesai = document.createElement("p");
+        btnSelesai.textContent = "Selesai";
+        btnSelesai.className = "selesai";
+        btnSelesai.onclick = function() {
+            h3.style.textDecoration = "line-through";
+        };
+        div.appendChild(btnSelesai);
+
+        document.querySelector(".todo").appendChild(div);
+        // memberikan elemen div yg berisi todo ke dalam kelas todo
+        document.getElementById("myinput").value = "";
+        // mengosongkong input setelah itme todo ditambahkan
+    }
+}

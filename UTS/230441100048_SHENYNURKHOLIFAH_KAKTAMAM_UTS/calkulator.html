@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatornya rozikhin dunks</title>
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.cd88e3ea65946161214d8c4968cfd9b6?rik=IxjtlxjQlmxC4w&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-calculatorcalculatorportable-electroniccalculationselectronicssmall-deviceelectronic-calculator-1701528343949tidvc.png&ehk=tnryq1uxkOAHLrFQzCNLjv1JmkKYf4O916y7s9e39fg%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #2aafb2;
+        }
+
+        .calculator {
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 27px;
+            background: #2aafb2;
+            box-shadow:  35px 35px 70px #165253,
+            -35px -35px 70px #0c7f83;
+            width: 300px;
+            display: flex;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .textview {
+            width: 250px;
+            font-size: 25px;
+            font-weight: 800;
+            padding: 5px;
+            margin: 3px;
+            cursor: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .button {
+            width: 60px;
+            height: 50px;
+            font-size: 25px;
+            margin: 3px;
+            border-radius: 3px;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px rgb(126, 126, 126);
+        }
+
+        .button:hover {
+            -webkit-box-shadow: inset 2px 5px 10px rgba(5, 5, 5, 0.668);
+            box-shadow: inset 2px 5px 10px rgba(5, 5, 5, 0.629);
+        }
+
+        .c:hover {
+            background-color: rgb(255, 255, 0);
+        }
+
+        .i:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        .titik {
+            width: 128px;
+        }
+
+        .equals {
+            height: 110px;
+        }
+
+        .equals:hover {
+            background-color: rgba(9, 186, 9, 0.722);
+            color: white;
+        }
+
+        .del:hover {
+            background-color: rgba(255, 0, 0, 0.697);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <form name="form">
+                <input type="text" class="textview" name="textview" placeholder="h311L0">
+            </form>
+            <table>
+                <tr>
+                    <td><input type="button" class="button c" value="C" onclick="c()" ></td>
+                    <td><input type="button" class="button del" value="Del" onclick="del()"></td>
+                    <td><input type="button" class="button i" value="x" onclick="insert('*')"></td>
+                    <td><input type="button" class="button i" value="/" onclick="insert('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="button" value="7" onclick="insert(7)"></td>
+                    <td><input type="button" class="button" value="8" onclick="insert(8)"></td>
+                    <td><input type="button" class="button" value="9" onclick="insert(9)"></td>
+                    <td><input type="button" class="button i" value="-" onclick="insert('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="button" value="4" onclick="insert(4)"></td>
+                    <td><input type="button" class="button" value="5" onclick="insert(5)"></td>
+                    <td><input type="button" class="button" value="6" onclick="insert(6)"></td>
+                    <td><input type="button" class="button i" value="+" onclick="insert('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="button" value="1" onclick="insert(1)"></td>
+                    <td><input type="button" class="button" value="2" onclick="insert(2)"></td>
+                    <td><input type="button" class="button" value="3" onclick="insert(3)"></td>
+                    <td rowspan="2"><input type="button" class="button equals" value="=" onclick="equals()"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" class="button titik" value="0" onclick="insert(0)"></td>
+                    <td><input type="button" class="button" value="." onclick="insert('.')"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        
+        function insert(num){
+            document.form.textview.value =  document.form.textview.value+num;
+        }
+
+        function c() {
+            document.form.textview.value = "";
+        }
+
+        function del() {
+            var x = document.form.textview.value;
+            document.form.textview.value = x.substring(0,x.length-1)
+        }
+
+        function equals() {
+            var i = document.form.textview.value;
+            if(i == "") {
+                alert("Anda belum memasukkan angka apapun");
+                alert("silahkan masukkan angka dengan benar")
+            }
+            if(i) {
+                document.form.textview.value = eval(i)
+            }
+        }
+        
+
+            
+        
+    </script>
+</body>
+</html>
