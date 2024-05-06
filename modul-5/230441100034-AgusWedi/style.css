@@ -1,0 +1,43 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.login {
+  height: 100vh;
+}
+
+.header h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #000000;
+}
+
+.header p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 20px;
+
+  color: #737373;
+}
+.login-form label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+
+  color: #000000;
+}
+.login-form button {
+  margin-top: 20px;
+}
+.form-group input {
+  background: #ffff;
+  border: 1px solid #bcbcbc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
