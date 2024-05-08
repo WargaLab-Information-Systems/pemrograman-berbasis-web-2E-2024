@@ -1,0 +1,170 @@
+<?php
+session_start();
+if(!isset($_SESSION['login'])) {
+  header("Location: index.php");
+  exit;
+}
+
+
+if(isset($_SESSION["username"])) {
+    $username = $_SESSION["username"];
+}
+
+
+if (!isset($_SESSION['students'])) {
+  $_SESSION['students'] = [];
+}
+
+// tambah data mahasiswa
+function addStudent($nim, $nama, $alamat, $angkatan) {
+  $_SESSION['students'][$nim] = [
+      'nama' => $nama,
+      'alamat' => $alamat,
+      'angkatan' => $angkatan
+  ];
+}
+
+// hapus data
+function deleteStudent($nim) {
+  unset($_SESSION['students'][$nim]);
+}
+
+// edit data
+function editStudent($nim, $nama, $alamat, $angkatan) {
+  $_SESSION['students'][$nim] = [
+      'nama' => $nama,
+      'alamat' => $alamat,
+      'angkatan' => $angkatan
+  ];
+  header("Location: #form");
+  exit;
+}
+
+// Menangani aksi dari form
+if (isset($_POST['action'])) {
+  if ($_POST['action'] == 'Tambah') {
+      addStudent($_POST['nim'], $_POST['nama'], $_POST['alamat'], $_POST['angkatan']);
+      header("Location: #form");
+      exit;
+  } elseif ($_POST['action'] == 'Edit') {
+      // Mengatur mode edit
+      $_SESSION['edit_nim'] = $_POST['nim'];
+      header("Location: #form");
+      exit;
+  } elseif ($_POST['action'] == 'Simpan') {
+      // Menyimpan perubahan dari mode edit
+      editStudent($_SESSION['edit_nim'], $_POST['nama'], $_POST['alamat'], $_POST['angkatan']);
+      // Mengatur mode default
+      unset($_SESSION['edit_nim']);
+      header("Location: #form");
+      exit;
+  } elseif ($_POST['action'] == 'Hapus') {
+      deleteStudent($_POST['nim']);
+      header("Location: #form");
+      exit;
+
+  }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      table {
+        width: 80%;
+        border-collapse: collapse;
+      }
+
+      .page2 table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .page2 th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><h1>JUNGLE.</h1></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">stories</a></li>
+            <li><a href="#form">form</a></li>
+            <li><a href="logout.php">logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="page1">
+      <div class="container">
+        <h1 class="welcome">WELCOME</h1>
+        <h1 class="name"><?php echo $username ?></h1>
+      </div>
+    </section>
+    <section class="page2" id="form">
+      <h1 style="width:100%; display:flex; justify-content:center;">DATA MAHASISWA</h1>
+      <form method="post">
+        <!-- Menambahkan input tersembunyi untuk mode edit -->
+        <input type="hidden" name="edit_nim" value="<?= isset($_SESSION['edit_nim']) ? $_SESSION['edit_nim'] : '' ?>" />
+        NIM: <input type="text" name="nim" value="<?= isset($_SESSION['edit_nim']) ? $_SESSION['edit_nim'] : '' ?>" required /><br />
+        Nama: <input type="text" name="nama" value="<?= isset($_SESSION['edit_nim']) ? $_SESSION['students'][$_SESSION['edit_nim']]['nama'] : '' ?>" required /><br />
+        Alamat: <input type="text" name="alamat" value="<?= isset($_SESSION['edit_nim']) ? $_SESSION['students'][$_SESSION['edit_nim']]['alamat'] : '' ?>" required /><br />
+        Angkatan: <input type="text" name="angkatan" value="<?= isset($_SESSION['edit_nim']) ? $_SESSION['students'][$_SESSION['edit_nim']]['angkatan'] : '' ?>" required /><br />
+        <!-- Mengubah nilai tombol sesuai mode -->
+        <?php if(isset($_SESSION['edit_nim'])): ?>
+        <input type="submit" name="action" value="Simpan" />
+        <input type="submit" name="action" value="Batal" />
+        <?php else: ?>
+        <input type="submit" name="action" value="Tambah" />
+        <?php endif; ?>
+      </form>
+
+      <table style="border: 1px solid black">
+        <tr>
+          <th>NIM</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Angkatan</th>
+          <th>Aksi</th>
+          <!-- Menambah kolom untuk tombol Hapus -->
+        </tr>
+        <?php foreach ($_SESSION['students'] as $nim =>
+        $student): ?>
+        <tr>
+          <td><?= $nim ?></td>
+          <td><?= $student['nama'] ?></td>
+          <td><?= $student['alamat'] ?></td>
+          <td><?= $student['angkatan'] ?></td>
+          <!-- Menambah tombol Hapus yang terpisah -->
+          <td>
+            <form method="post">
+              <input type="hidden" name="nim" value="<?= $nim ?>" />
+              <input type="submit" name="action" value="Edit" />
+              <input type="submit" name="action" value="Hapus" />
+            </form>
+          </td>
+        </tr>
+        <?php endforeach; ?>
+      </table>
+    </section>
+  </body>
+</html>
