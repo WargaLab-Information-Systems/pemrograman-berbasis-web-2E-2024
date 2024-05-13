@@ -1,0 +1,30 @@
+body {
+    background: #90afc5;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #333;
+    text-align : center;
+}
+table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+th, td {
+    padding: 8px;
+}
+a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+a.tambah{
+    background-color: green;
+}
+a.ubah {
+    background-color: #336b87;
+}
+a.hapus {
+    background-color: #763626;
+}
