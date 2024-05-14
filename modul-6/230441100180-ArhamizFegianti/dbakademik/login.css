@@ -1,0 +1,60 @@
+*{
+  padding-right: 10px;
+  padding-left: 25px;
+}
+
+body {
+  font: Georgia bold;
+  font-size: 20px;
+  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+  color: black;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 8px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: transparant;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none; 
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.button:hover {
+  background-color: pink; 
+}
+
+
+
+
