@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #6f42c1, #007bff); /* warna gradasi ungu biru */
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: mediumblue;
+  color: white;
+  padding: 13px 50px;
+  margin-right: 20rem;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+button:hover {
+    background: midnightblue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,3,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 40px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.gambar {
+    width: 30rem;
+    height: 25rem;
+}
+
+p {
+    background-color: orange;
+    width:50%;
+    padding: 13px 50px;
+    font-size: 17px;
+}

@@ -1,0 +1,79 @@
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.slider-container img {
+    width: auto;
+    height: 350px; 
+    object-fit: cover;
+}
+
+.header-card{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+.card-parent{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.img-card{
+    height: 200px;
+    object-fit: cover;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.jumbotron-custom {
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+/* Efek hover pada kartu */
+.hover-effect:hover {
+    transform: scale(1.05); /* Membuat kartu sedikit membesar ketika di-hover */
+    transition: transform 0.3s ease-in-out; /* Animasi halus untuk transformasi */
+    cursor: pointer; /* Mengubah cursor menjadi pointer untuk menunjukkan bahwa elemen dapat diklik */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #f8f9fa; /* Warna latar belakang untuk navbar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Bayangan ringan untuk efek 3D */
+}
+
+/* Styling untuk slider carousel */
+.slider-container img {
+    height: 500px; /* Menetapkan tinggi tetap untuk gambar dalam carousel */
+    object-fit: cover; /* Pastikan gambar menutupi seluruh area tanpa distorsi */
+}
+
+/* Styling footer */
+footer {
+    background-color: #343a40; /* Warna latar belakang gelap untuk footer */
+    color: #ffffff; /* Warna teks putih */
+    padding: 20px; /* Padding untuk memberi ruang di sekitar teks */
+    margin-top: 20px; /* Memberi jarak antara konten dan footer */
+}
+
+/* Styling untuk header kursus populer */
+.header-card {
+    margin-bottom: 20px; /* Memberi jarak bawah */
+    border-radius: 5px; /* Membulatkan sudut */
+}
+
+/* Styling teks dalam navbar */
+.navbar-brand, .nav-link {
+    color: #007bff; /* Warna biru untuk teks navbar */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Menggarisbawahi teks saat di-hover */
+}
+
+

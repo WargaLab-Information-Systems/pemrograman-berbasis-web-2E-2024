@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Lingkungan</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">  
+    <style>
+        body {
+        background-image: url(BG2.jpg); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+      }
+        footer {
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    </style> 
+</head>
+<body class="bg-green-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-green-500 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-2xl">Halaman Lingkungan</a>
+            <a href="#" class="text-white font-bold text-2xl">Mari Lindungi Lingkungan!</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white">Beranda</a></li>
+                <li><a href="#" class="text-white">Tentang</a></li>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="text-white">Kontak</button>
+                    <ul id="dropdownMenu" class="hidden absolute bg-white border rounded-lg">
+                        <li><a href="#" class="block px-4 py-2 text-gray-800">Email</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-800">Telepon</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-800">Alamat</a></li>
+                    </ul>
+                </div>
+                <script>
+                    function toggleDropdown() {
+                        var dropdownMenu = document.getElementById("dropdownMenu");
+                        dropdownMenu.classList.toggle("hidden");
+                    }
+                </script>
+            </ul>            
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold mb-4">Selamat Datang di Halaman Lingkungan!</h1>
+        <p class="text-lg">Halaman ini didedikasikan untuk mempromosikan kesadaran lingkungan dan pentingnya
+            menjaga kelestarian alam. Lingkungan adalah segala sesuatu yang ada di sekitar manusia, termasuk alam dan juga lingkungan buatan manusia. Lingkungan mencakup udara, tanah, air, tumbuhan, hewan, manusia, dan interaksi antara mereka. Oleh karena itu, perlindungan dan pengelolaan lingkungan sangat penting untuk menjaga keseimbangan ekosistem dan keberlanjutan sumber daya alam bagi generasi masa depan.</p>
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-2">Misi Kami</h2>
+            <p class="text-lg">Misi kami adalah menciptakan kesadaran akan pentingnya pelestarian lingkungan
+                melalui edukasi, kampanye, dan aksi nyata. Dan Mengorganisir kegiatan pembersihan lingkungan untuk membersihkan pantai, sungai, taman, dan area publik lainnya. </p>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-2">Apa yang dapat Anda Lakukan untuk lingkungan?</h2>
+            <ul class="list-disc list-inside">
+                <li class="text-lg">Kurangi penggunaan plastik sekali pakai.</li>
+                <li class="text-lg">Gunakan transportasi umum atau sepeda untuk mengurangi emisi gas buang.</li>
+                <li class="text-lg">Dukung produk ramah lingkungan.</li>
+                <li class="text-lg">Mendukung Penghijauan.</li>
+                <li class="text-lg">Penghematan Energi.</li>
+                <li class="text-lg">Membersihkan Lingkungan.</li>
+                <li class="text-lg">Tanam pohon dan dukung program reforestasi.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-green-500 p-6 mt-12">
+        <div class="container mx-auto text-white text-center">
+            <p>&copy; 2024 Halaman Lingkungan. All rights reserved. Ningrum Kusuma </p>
+        </div>
+    </footer>
+</body>
+</html>

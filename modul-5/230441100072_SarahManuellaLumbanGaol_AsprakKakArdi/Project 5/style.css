@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formlogin {
+  background-color: #ddc9c9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  text-align: center;
+}
+
+.foto img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.formlogin h1 {
+  margin: 20px 0;
+  color: #333;
+}
+
+.formlogin input[type="text"],
+.formlogin input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formlogin button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.formlogin button:hover {
+  background-color: #0056b3;
+}
+
+.lupa {
+  text-align: center;
+  margin-top: 10px;
+  font-size: small;
+}
+
+.lupa a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 0 5px;
+  font-size: small;
+}
+
+.lupa a:hover {
+  text-decoration: underline;
+  font-size: small;
+}
+.isi {
+  width: calc(
+    100% - 22px
+  ); /* Mengurangi lebar input dan tombol agar sesuai dengan lebar form */
+  padding: 40px;
+  margin-bottom: 50px;
+  border: 1px solid #1c2ce3;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-width: 800px; /* Menetapkan lebar maksimum form */
+  margin: 0 auto;
+}
+.come {
+  text-align: center;
+}
+
+.pp {
+  text-align: center;
+  color: #1c2ce3;
+}
+
+.next {
+  padding: 5px;
+  border: 2px solid #126ef0;
+  border-radius: 50px;
+}
+
+.previous {
+  padding: 5px;
+  border: 2px solid #126ef0;
+  border-radius: 50px;
+}

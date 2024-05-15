@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>To Do List</h2>
+      <input type="text" id="Inputan" />
+      <span onclick="NewList()" class="add">add</span>
+
+      <div class="list" style="margin-top: 5rem">
+        <ul id="IniUl">
+          <!-- <li>dsvfds</li>
+          <li>dsfdsv</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var list = document.querySelector("ul");
+      list.addEventListener("click", function (ev) {
+        if (ev.target.tagName === "LI") {
+          ev.target.classList.toggle("checked");
+        }
+      });
+
+      function NewList() {
+        var li = document.createElement("li");
+        var input = document.getElementById("Inputan").value;
+        var t = document.createElement("input");
+        t.value = input;
+        t.type = "text";
+        li.appendChild(t);
+        //
+
+        if (input === "") {
+          alert("Masukkan List dengan benar !!");
+        } else {
+          document.getElementById("IniUl").appendChild(li);
+        }
+
+        document.getElementById("Inputan").value = "";
+        var span = document.createElement("SPAN");
+
+        var txt = document.createTextNode("\u00D7");
+
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        var Edit = document.getElementsByClassName("Edit");
+        var close = document.getElementsByClassName("close");
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function () {
+            var div = this.parentElement;
+            div.style.display = "none";
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

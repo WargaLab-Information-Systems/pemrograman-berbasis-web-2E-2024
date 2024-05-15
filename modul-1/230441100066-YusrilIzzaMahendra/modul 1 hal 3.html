@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input[type="submit"] {
+            margin-top: 8px;
+        }
+        .tombol-prev {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body background="background5.jpg">
+    <form action="modul 1 hal 1.html" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+        <label for="NIM">NIM:</label>
+        <input type="number" id="NIM" name="NIM">
+        
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <label>
+            <input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+        <label>
+            <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                
+        <label for="tahun_Angkatan">Tahun Angkatan:</label>
+        <select name="tahun_Angkatan" id="tahun_Angkatan">
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        
+
+        <label for="hobi">Pilih Hobi Anda:</label>
+        <label>
+            <input type="checkbox" name="hobi" value="Sepakbola" /> Sepak Bola</label>
+        <label>
+            <input type="checkbox" name="hobi" value="Volly" /> Volly</label>
+        <label>
+            <input type="checkbox" name="hobi" value="Basket" /> Basket</label>
+        <label>
+            <input type="checkbox" name="hobi" value="Esport" /> Esport</label>
+    
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email">
+
+        <label for="fileInput">Foto:</label>
+        <input type="file" id="fileInput" name="fileInput"><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+    </form>
+    <div class="tombol-prev">
+    <button onclick="document.location='modul 1 hal 2.html'" style="width: 60px; height: 45px;">prev</button>
+    </div>
+</body>
+</html>

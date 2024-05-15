@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* CSS untuk variasi tampilan */
+body {
+  background-image: url('bgr.jpeg'); /* Gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif; /* Mengatur font */
+  color: white; /* Warna teks */
+}
+
+.dropdown {
+  margin-top: 50px; /* Jarak dropdown dari atas */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang konten */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow */
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase; /* Huruf kapital */
+  letter-spacing: 2px; /* Spasi antar huruf */
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6; /* Tinggi baris */
+}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="HalHtml.html">HTML</a>
+    <a href="HalCss.html">CSS</a>
+    <a href="HalJs.html">JavaScript</a>
+    <a href="HalToDo.html">ToDo</a>
+  </div>
+</div>
+
+<div class="content">
+  <h1>Welcome to My Website</h1>
+  <p>Terima kasih telah hendak mampir diwebsite kita, dimana di website ini kita menjelaskan pengertian program dari HTML, CSS, dan JavaScript, dimana pada website ini kalian bakal ngerti atau bakal paham yang dimaksud dengan HTML, CSS, dan JavaScript.</p>
+  <p>Sebelum melanjutkan ke pengertian HTML, CSS, dan JavaScript alangkah baiknya kita membaca do'a menurut kepercayaan dan keyakinan masing-masing, berdo'a mulai... </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

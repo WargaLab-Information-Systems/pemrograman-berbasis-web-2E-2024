@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="hal2.css">
+</head>
+<body background="ltrpres.jpg">
+    <div class="container">
+        <h1 class="text-center my-5">Calculator</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="number1">Number 1:</label>
+                <input type="number" id="number1" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="operator">Operator:</label>
+                <select id="operator" class="form-control" required>
+                    <option value="">Select Operator</option>
+                    <option value="+">penjumlahan (+)</option>
+                    <option value="-">pengurangan (-)</option>
+                    <option value="*">perkalian (*)</option>
+                    <option value="/">pembagian (/)</option>
+                    <option value="%">Modulus (%)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="number2">Number 2:</label>
+                <input type="number" id="number2" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+        </form>
+        <p id="result" class="text-center mt-3"></p>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="hal2.js"></script>
+</body>
+</html>

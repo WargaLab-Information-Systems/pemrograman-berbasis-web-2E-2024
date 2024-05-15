@@ -1,0 +1,58 @@
+#user=="admin" && pass=="123"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h2><center><b>Login Dahulu Sebelum Memakai kalkulator</b></center></h2>
+    <script language="JavaScript">
+        function Login(){ 
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            if (user=="admin" && passw=="123"){
+                alert("Selamat anda berhasil login");
+            }else{
+                alert("Username dan password anda salah!");
+            }
+        }
+    </script>
+   
+<body>
+    <form class="center">
+        <table width="225" cellpadding="4">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><input type="button" value="Login" onClick="Login()"></td>
+                
+            </tr>
+            <script language="JavaScript">
+                function Login(){ 
+                    var user = document.getElementById("username").value;
+                    var pass = document.getElementById("password").value;
+            
+                    if (user=="admin" && pass=="123"){ 
+                        alert("Selamat anda berhasil login");
+                        window.location.href = "kalkulator.html";
+                    } else {
+                        alert("Username dan password anda salah!");
+                    }
+                }
+            </script>
+            
+        </table>
+    </form>
+</body>
+</html>

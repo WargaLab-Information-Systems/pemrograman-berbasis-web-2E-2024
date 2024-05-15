@@ -1,0 +1,53 @@
+body {
+    padding-top: 50px;
+    background-color: #f8f9fa; /* Warna latar belakang */
+  }
+
+  .container {
+    background-color: #fff; /* Warna latar belakang container */
+    border-radius: 10px; /* Sudut bulat container */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Bayangan container */
+    padding: 40px;
+    max-width: 800px; /* Lebar maksimum container */
+    width: 100%;
+  }
+
+  h2 {
+    color: #007bff; /* Warna judul */
+  }
+
+  label {
+    color: #555; /* Warna teks label */
+  }
+
+  input[type="number"],
+  select {
+    border-radius: 5px; /* Sudut bulat input dan select */
+    border: 1px solid #ced4da; /* Border input dan select */
+    padding: 10px; /* Padding input dan select */
+  }
+
+  button {
+    border-radius: 5px; /* Sudut bulat tombol */
+    padding: 10px 20px; /* Padding tombol */
+    background-color: #007bff; /* Warna tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none;
+  }
+
+  button:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+  }
+
+  th {
+    background-color: #007bff; /* Warna latar belakang header kolom tabel */
+    color: #fff; /* Warna teks header kolom tabel */
+  }
+
+  #resultTable tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang baris ganjil pada tabel */
+  }
+
+  #resultTable td {
+    text-align: center; /* Pusatkan teks pada sel tabel */
+  }

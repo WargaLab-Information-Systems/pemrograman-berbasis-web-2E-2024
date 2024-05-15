@@ -1,0 +1,71 @@
+/* Style untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color: #fff;
+}
+
+/* Style untuk container login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #800000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.error {
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color:#b94e48;
+    color : #fff;
+    
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffbf00;
+    color: #fff;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffae42 ;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+a:hover {
+    text-decoration: underline;
+}

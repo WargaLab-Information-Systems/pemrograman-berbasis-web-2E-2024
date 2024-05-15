@@ -1,0 +1,13 @@
+paragaraf {
+    text-indent: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+ul li a {
+    text-decoration: none;
+    background-color: rgb(144, 128, 160);
+}
+ul li a: :hover{
+    width: 40px;
+    height: 40px;
+}

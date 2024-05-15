@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Yo, Welcome to Calculator!</h2>
+                    <form id="calculatorForm">
+                        <div class="form-group">
+                            <label for="num1">Number 1:</label>
+                            <input type="number" class="form-control" id="num1" placeholder="Enter number 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="operator">Operator:</label>
+                            <select class="form-control" id="operator">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="*">*</option>
+                                <option value="/">/</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="num2">Number 2:</label>
+                            <input type="number" class="form-control" id="num2" placeholder="Enter number 2">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+                    </form>
+                    <br>
+                    <h3 class="text-center">Result:</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Username</th>
+                                    <th>Num 1</th>
+                                    <th>Operator</th>
+                                    <th>Num 2</th>
+                                    <th>Result</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultTable">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>

@@ -36,7 +36,7 @@
         text-decoration: none;
         color: white;
         font-weight: bold;
-        transition:color 0.3s ease ;
+        transition:color 0.3s linear ;
     }
     .menu li a:hover{
         color: rgb(158, 241, 247);
@@ -47,9 +47,7 @@
     }
     nav ul{
         list-style: none;
-    }
-    nav ul li::before{
-        content: "";
+    
     }
     nav ul ul{
         display: none;

@@ -1,0 +1,73 @@
+/* Style untuk judul */
+h2 {
+    text-align: center;
+    color: #fff; /* Warna teks judul */
+}
+
+/* Style untuk tabel */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #080808; /* Warna garis tabel */
+    background-color: #080808; /* Warna latar belakang tabel */
+    color: #fff; /* Warna teks dalam tabel */
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #080808; /* Warna garis batas cel */
+}
+
+table th {
+    background-color: #800000; /* Warna latar header */
+}
+
+table tr:hover {
+    background-color: #b94e48; /* Warna latar baris saat dihover */
+}
+
+/* Style untuk link update dan delete */
+table a {
+    text-decoration: none;
+    color: #fff; /* Warna teks link */
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+table a:hover {
+    color: #b94e48; /* Warna teks link saat dihover */
+}
+
+/* Style untuk form */
+form {
+    width: 50%;
+    margin: 20px auto;
+}
+
+form input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #080808; /* Warna border input */
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #080808; /* Warna latar belakang input */
+    color: #fff; /* Warna teks input */
+}
+
+form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #800000; /* Warna latar tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #b94e48; /* Warna tombol saat dihover */
+}

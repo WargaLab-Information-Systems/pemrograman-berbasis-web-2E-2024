@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kalkulator</h1>
+        <form id="calculatorForm">
+            <div class="form-group">
+                <label for="number1">Angka 1</label>
+                <input type="number" class="form-control" id="number1" required>
+            </div>
+            <div class="form-group">
+                <label for="operator">Operator</label>
+                <select class="form-control" id="operator">
+                    <option value="tambah">+</option>
+                    <option value="kurang">-</option>
+                    <option value="kali">*</option>
+                    <option value="bagi">/</option>
+                    <option value="modulus">%</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="number2">Angka 2</label>
+                <input type="number" class="form-control" id="number2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Hitung</button>
+        </form>
+
+        <h2>Hasil Perhitungan</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama User</th>
+                    <th>Angka 1</th>
+                    <th>Operator</th>
+                    <th>Angka 2</th>
+                    <th>Hasil</th>
+                </tr>
+            </thead>
+            <tbody id="resultTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

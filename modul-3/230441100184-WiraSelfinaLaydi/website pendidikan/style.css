@@ -1,0 +1,61 @@
+.h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner{
+    background: url(sekolah.jpg);
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: papayawhip;
+}
+.card-content{
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 5rem; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.header-card{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+.img-card{
+    height: 200px;
+    object-fit: cover;
+}
+.paragraf{
+    text-align: justify;
+    padding-right: 100px;
+}
+footer{
+    padding: 5rem 0px;
+    background-color: rgb(210, 211, 170);
+}
+.wrapper-col-1{
+    margin-left: 10%;
+}
+.wrapper-col-1 h1{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.wrapper-col-1 p{
+    font-size: 14px;
+    width: 90%;
+}
+.wrapper-col-2{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-col-2 h1{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 5%;
+}
+.wrapper-col-2 ul li{
+    display: inline-block;
+    margin-left: 0;
+    font-size: 14px;
+    width: 90%;
+}

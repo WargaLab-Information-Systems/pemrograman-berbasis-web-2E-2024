@@ -1,0 +1,60 @@
+/* Calculator Styles */
+.calculator-container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none; /* Menghilangkan garis focus saat diklik */
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.calc-button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.calc-button:hover {
+    background-color: #d5d5d5;
+}
+
+.calc-button.operation {
+    background-color: #ff9800; /* Warna untuk tombol operasi */
+}
+
+.calc-button.equal {
+    background-color: #4caf50; /* Warna untuk tombol sama dengan */
+}
+
+.calc-button.clear {
+    background-color: #f44336; /* Warna untuk tombol clear */
+}
+
+.calc-button:active {
+    background-color: #bfbfbf; /* Warna saat tombol ditekan */
+}

@@ -1,0 +1,21 @@
+/* Custom CSS for Login Page */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#loginStatus {
+    margin-top: 10px;
+    color: red;
+}

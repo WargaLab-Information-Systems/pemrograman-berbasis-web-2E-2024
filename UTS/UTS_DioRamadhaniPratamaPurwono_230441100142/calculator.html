@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4">Kalkulator</h3>
+                        <form id="calculatorForm">
+                            <div class="form-group">
+                                <label for="number1">Nomer 1</label>
+                                <input type="number" class="form-control" id="number1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="operator">Operator</label>
+                                <select class="form-control" id="operator" required>
+                                    <option value="">Pilih operator</option>
+                                    <option value="+">Penjumlahan (+)</option>
+                                    <option value="-">Pengurangan (-)</option>
+                                    <option value="*">Perkalian (*)</option>
+                                    <option value="/">Pembagian (/)</option>
+                                    <option value="%">Sisa Bagi (%)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="number2">Nomer 2</label>
+                                <input type="number" class="form-control" id="number2" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Calculate</button>
+                            <!-- Tambahkan elemen untuk menampilkan hasil -->
+                            <div class="form-group mt-4">
+                                <label for="result">Hasil</label>
+                                <input type="text" class="form-control" id="result" readonly>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

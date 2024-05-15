@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(248, 157, 157);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+    justify-content: center;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 35px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container h1 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 55px;
+    justify-content: center;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ddd;
+    margin: auto;
+    width: 50%;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.form-group input{
+    padding: 15px;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 3px;
+    border-color: #eb6fad;
+}
+.form-group .input{
+    background-color: rgb(22, 22, 22);
+    padding-right: 35px;
+}
+.form-control{
+    padding: 15px;
+    width: 30%;
+    font-size: 16px;
+    border-radius: 3px;
+    border-color: #000000;
+}
+.tabel h2 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    justify-content: center;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+table, th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #ffffff;
+}
+option{
+    font-size: 18px;
+}
+.button{
+    font-size: 50px;
+    text-align: center; 
+    padding: 15px 30px;
+}
