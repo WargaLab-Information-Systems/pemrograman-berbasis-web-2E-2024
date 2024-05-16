@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Warna biru langit */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Warna teks */
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Warna teks */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 12px); /* Lebar input dikurangi dengan padding */
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
