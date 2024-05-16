@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfa204; /* Warna kuning gelap */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Warna teks putih */
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Warna teks */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    color: #333; /* Warna teks */
+    background-color: #fff8dc; /* Warna cream */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #0000FF;
+    color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd; /* Warna hover tetap abu-abu */
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Warna teks */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #0000FF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}

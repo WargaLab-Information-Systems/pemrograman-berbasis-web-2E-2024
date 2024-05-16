@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran Sekolah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Form Pendaftaran Sekolah</h1>
+
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="telepon">Nomor Telepon:</label><br>
+      <input type="tel" id="telepon" name="telepon" required><br>
+
+      <label for="alamat">Alamat:</label><br>
+      <textarea id="alamat" name="alamat" rows="4" required></textarea><br>
+
+      <label for="program-studi">Program Studi Pilihan:</label><br>
+      <select id="program-studi" name="program-studi" required>
+        <option value="">Pilih Program Studi</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Bisnis Digital">Bisnis Digital</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Teknik Sipil">Teknik Sipil</option>
+      </select><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</body>
+</html>
