@@ -1,0 +1,16 @@
+.prof {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h3{
+    text-align:center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+
