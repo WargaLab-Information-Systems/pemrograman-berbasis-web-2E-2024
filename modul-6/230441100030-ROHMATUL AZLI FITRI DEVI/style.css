@@ -1,0 +1,19 @@
+body{
+  background-image: url(gambar.jpg);
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding: 20px;
+  font: 20px;
+  font-family: sans-serif;
+}
+
+
+nav ul li{
+  list-style: none;
+}
+
