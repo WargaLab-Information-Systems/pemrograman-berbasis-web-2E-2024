@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRifkyMenambahBiodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea,
+        input[type="email"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biodata Diri</h1>
+    <form method="post">
+        <label for="nama_lengkap">Nama lengkap:</label>
+        <input type="text" name="nama_lengkap" placeholder="Silahkan isi nama">
+        <label for="Nim_anda">NIM:</label>
+        <input type="text" name="Nim_anda" placeholder="Silahkan isi NIM">
+        <label for="status">Status:</label>
+        <select id="sts" name="status">
+            <option value="1">Pelajar</option>
+            <option value="2">Mahasiswa</option>
+            <option value="3">Menikah</option>
+        </select>
+        <label for="fakultas">Fakultas:</label>
+        <input type="text" name="fakultas" placeholder="Silahkan isi fakultas">
+        <label for="prodi">Prodi:</label>
+        <input type="text" name="prodi" placeholder="Silahkan isi prodi">
+        <label for="angkatan">Angkatan:</label>
+        <input type="number" name="angkatan">
+        <label for="tempat">Tempat lahir:</label>
+        <input type="text" name="tempat" placeholder="Silahkan isi tempat lahir">
+        <label for="tgl_lahir">Tanggal lahir:</label>
+        <input type="date" name="tgl_lahir">
+        <label for="agama">Agama:</label>
+        <select id="agm" name="Agama">
+            <option value="1">Kristen</option>
+            <option value="2">Islam</option>
+            <option value="3">Hindu</option>
+            <option value="4">Buddha</option>
+        </select>
+        <label for="alamat">Alamat:</label>
+        <textarea name="alamat" cols="30" rows="5"></textarea>
+        <label for="jenis_kelamin">Jenis kelamin:</label>
+        <input type="radio" name="jenis_kelamin" value="pria">Pria
+        <input type="radio" name="jenis_kelamin" value="wanita">Wanita
+        <label for="hobby">Hobby:</label>
+        <input type="checkbox" name="hobby" value="berenang">Berenang
+        <input type="checkbox" name="hobby" value="memancing">Memancing
+        <input type="checkbox" name="hobby" value="badminton">Badminton
+        <input type="checkbox" name="hobby" value="membaca">Membaca
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Silahkan isi email">
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto">
+        <br><br>
+        <input type="submit" value="Tambah">
+        <input type="reset" value="Reset">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <hr width="600px">
+  <table align="center" cellpadding="10px" width="600px">
+    
+    <!-- Data lainnya disini -->
+  </table>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="Modul1_hal2.html" class="button">Kembali</a>
+  </div>
+</body>
+</html>
