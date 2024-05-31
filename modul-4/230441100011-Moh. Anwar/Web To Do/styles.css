@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.add-task-container {
+    margin-bottom: 20px;
+}
+
+.add-task-container input[type="text"],
+.add-task-container textarea,
+.add-task-container select,
+.add-task-container input[type="datetime-local"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.add-task-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-task-container button:hover {
+    background-color: #45a049;
+}
+
+.task-options {
+    margin-bottom: 20px;
+}
+
+.task-options label {
+    margin-right: 10px;
+}
+
+.task-options input[type="text"],
+.task-options select {
+    padding: 8px;
+}
+
+.task-options button {
+    padding: 8px 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.task-options button:hover {
+    background-color: #005f7f;
+}
+
+.task-item {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.task-item.completed {
+    background-color: #f2f2f2;
+    color: #888;
+}
+
+.task-info {
+    margin-bottom: 10px;
+}
+
+.task-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.task-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.task-checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
