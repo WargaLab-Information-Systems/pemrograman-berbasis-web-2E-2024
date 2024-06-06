@@ -1,0 +1,93 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #000; /* Mengubah warna latar belakang menjadi hitam */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw; 
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff; /* Mengubah warna teks menjadi putih */
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+
+.todo-list {
+  width: 450px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #222; /* Mengubah warna latar belakang daftar menjadi abu-abu gelap */
+  justify-content: center;
+}
+
+.list-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+}
+
+.entered-list { 
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #777; /* Ubah warna border input */
+  font-size: 16px;
+  outline: none;
+  background-color: #333; /* Ubah warna latar belakang input */
+  color: #fff; /* Ubah warna teks input */
+}
+
+.add-list {
+  border: none;
+  border-radius: 5px;
+  background-color: #008080; /* Ubah warna tombol tambah */
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.add-list.active {
+ opacity: 1;
+}
+
+.tasks {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444; /* Ubah warna latar belakang item */
+}
+
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff; /* Ubah warna teks */
+  letter-spacing: 1px;
+}
+
+.item.completed p{
+  text-decoration: line-through;
+  color: #777; /* Ubah warna teks item yang sudah selesai */
+}
+
+.item-btn i {
+  color: #008080; /* Ubah warna ikon */
+  font-size: 18px;
+  cursor: pointer;
+}

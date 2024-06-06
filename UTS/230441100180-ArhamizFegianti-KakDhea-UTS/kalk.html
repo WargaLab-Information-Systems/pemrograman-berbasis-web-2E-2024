@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kalk.css">
+  <title>KALKULATOR</title>
+</head>
+
+<body>
+  <h1>Kalkulator</h1>
+  <div class="calculator-container">
+    <input type="number" id="num1" placeholder="Angka 1">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value=""></option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input type="number" id="num2" placeholder="Angka 2">
+    <button onclick="calculate()">Hitung</button>
+  </div>
+  <table id="resultTable" border="1">
+    <tr>
+      <th>No</th>
+      <th>Nama User</th>
+      <th>Angka 1</th>
+      <th>Operator</th>
+      <th>Angka 2</th>
+      <th>Hasil</th>
+    </tr>
+  </table>
+  <p><a href="login.html"> <==PREVIOUS </a></p>
+
+
+  <script>
+    function calculate() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var operator = document.getElementById("operator").value;
+      var result = '';
+
+      switch (operator) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          if (num2 != 0) {
+            result = num1 / num2;
+          } else {
+            alert("Pembagian dengan nol tidak diperbolehkan.");
+            return;
+          }
+          break;
+        case '%':
+          if (num2 != 0) {
+            result = num1 % num2;
+          } else {
+            alert("Modulus dengan nol tidak diperbolehkan.");
+            return;
+          }
+          break;
+      }
+
+      var username = localStorage.getItem("username");
+      var table = document.getElementById("resultTable");
+      var row = table.insertRow(-1);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+      var cell5 = row.insertCell(4);
+      var cell6 = row.insertCell(5);
+
+      cell1.textContent = table.rows.length - 1;
+      cell2.textContent = username;
+      cell3.textContent = num1;
+      cell4.textContent = operator;
+      cell5.textContent = num2;
+      cell6.textContent = result;
+    }
+  </script>
+</body>
+</html>
