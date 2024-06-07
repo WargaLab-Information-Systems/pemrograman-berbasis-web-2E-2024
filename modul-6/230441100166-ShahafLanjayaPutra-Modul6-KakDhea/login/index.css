@@ -1,0 +1,49 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('img.jpg'); /* Menentukan gambar latar belakang */
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 400px; /* Lebar maksimum kontainer */
+        margin: 100px auto; /* Mengatur jarak dari atas dan bawah, dan mengatur posisi menjadi tengah */
+        background-color: #ffffff; /* Warna latar belakang kontainer */
+        padding: 40px; /* Padding di dalam kontainer */
+        border-radius: 8px; /* Membuat sudut kontainer menjadi bulat */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada kontainer */
+    }
+    h2 {
+        text-align: center; /* Posisi teks menjadi tengah */
+        color: #333333; /* Warna teks */
+        margin-bottom: 30px; /* Jarak dari bawah */
+    }
+    form {
+        text-align: center; /* Posisi form menjadi tengah */
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%; /* Lebar input */
+        padding: 10px; /* Padding di dalam input */
+        margin-bottom: 20px; /* Jarak dari bawah */
+        border: 1px solid #dddddd; /* Garis border */
+        border-radius: 5px; /* Membuat sudut input menjadi bulat */
+        box-sizing: border-box; /* Memastikan padding dan border tidak menambah lebar input */
+    }
+    input[type="submit"] {
+        background-color: #007bff; /* Warna background tombol submit */
+        color: #ffffff; /* Warna teks pada tombol submit */
+        border: none; /* Tanpa border */
+        padding: 12px 20px; /* Padding di dalam tombol */
+        border-radius: 5px; /* Membuat sudut tombol menjadi bulat */
+        cursor: pointer; /* Mengubah kursor menjadi tangan saat diarahkan ke tombol */
+        transition: background-color 0.3s ease; /* Efek transisi ketika tombol dihover */
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Warna background tombol submit saat dihover */
+    }
+    .notification {
+        text-align: center; /* Posisi teks menjadi tengah */
+        color: #ff0000; /* Warna teks */
+        margin-bottom: 20px; /* Jarak dari bawah */
+    }
