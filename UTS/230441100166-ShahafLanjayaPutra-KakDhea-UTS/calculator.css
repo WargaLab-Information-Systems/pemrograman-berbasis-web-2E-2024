@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.75), rgba(41, 41, 41, 0.75)), url("hh.jpg");
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    transition: margin-bottom 0.3s ease-in-out;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: margin-bottom 0.3s ease-in-out;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#result {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#logout-btn {
+    margin-top: 30px;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+/* Animasi latar belakang */
+@keyframes changeBackground {
+    0% {
+        background-image: linear-gradient(rgba(32, 32, 32, 0.75), rgba(41, 41, 41, 0.75)), url("hh.jpg");
+    }
+    50% {
+        background-image: linear-gradient(rgba(41, 41, 41, 0.75), rgba(32, 32, 32, 0.75)), url("hh2.jpg");
+    }
+    100% {
+        background-image: linear-gradient(rgba(32, 32, 32, 0.75), rgba(41, 41, 41, 0.75)), url("hh.jpg");
+    }
+}
+
+/* Animasi bayangan */
+@keyframes shadowPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Animasi teks */
+@keyframes textGlow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
