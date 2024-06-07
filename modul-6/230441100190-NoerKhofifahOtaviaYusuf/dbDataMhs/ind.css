@@ -1,0 +1,12 @@
+body{
+    background-image: url("bgr.jpg");
+    background-size: 100%;
+}
+.container{
+    margin-top: 50px;
+    padding:10px;
+    background-color:#fff;
+    border:3px dashed black;
+    width:30%;
+}
+
