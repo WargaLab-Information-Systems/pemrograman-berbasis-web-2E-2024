@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('sea.jpg'); /* Ganti 'nir.png' dengan URL gambar latar belakang yang Anda inginkan */
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Memberi latar belakang semi transparan pada kontainer */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #black; /* Mengubah warna judul menjadi putih */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Menggunakan font yang lebih menarik */
+  text-align: center; /* Menengahkan judul ke tengah */
+}
+nav {
+  background-color: #444;
+  padding: 10px 20px;
+  text-align: center; /* Menengahkan tautan di dalam <nav> secara horizontal */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease; /* Animasi saat hover */
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+
+form {
+  margin: 0 auto; /* Menengahkan form ke tengah */
+  width: 50%;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black; /* Mengubah warna teks menjadi hitam */
+  font-weight: bold; /* Membuat teks menjadi bold */
+}
+
+
+form input[type="text"] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Memberi sudut pada tombol */
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+  color: black; /* Mengubah warna teks pada tabel menjadi merah */
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table td a {
+  text-decoration: none;
+  color: red; /* Mengubah warna tautan menjadi merah */
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
