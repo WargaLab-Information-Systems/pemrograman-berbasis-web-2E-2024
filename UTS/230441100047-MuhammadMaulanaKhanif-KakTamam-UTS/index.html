@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>calculator</title>
+
+    <style>
+      input:focus {
+        border: 0;
+        outline: none;
+      }
+
+      .container div:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body style="height: 100%">
+    <section class="d-flex justify-content-center align-items-center" style="height: 100vh; width: 100%; background-color: #7fc7d9">
+      <div class="container rounded-3" style="width: 300px; height: 500px; background-color: #dcf2f1">
+        <!-- inputan -->
+        <div class="inputan-number d-flex flex-column justify-content-center mt-5">
+          <input type="number" id="number1" class="mb-3 border-0 rounded-2" style="height: 2rem" />
+          <input type="number" id="number2" class="border-0 rounded-2" style="height: 2rem" />
+        </div>
+        <!-- akhir inputan -->
+
+        <!-- hasil -->
+        <div class="result bg-info mt-3 d-flex justify-content-center">
+          <h2 id="inihasil">0</h2>
+        </div>
+        <!-- akhir hasil -->
+
+        <!-- button -->
+        <div class="container bg-danger mt-3" style="width: 100%; height: 15rem">
+          <div class="row" style="height: 40%">
+            <div class="col-6 bg-warning d-flex justify-content-center align-items-center fs-4 border border-1 border-white" id="tambah">+</div>
+            <div class="col-6 bg-warning d-flex justify-content-center align-items-center fs-4 border border-1 border-white" id="kurang">-</div>
+          </div>
+          <div class="row" style="height: 40%">
+            <div class="col-6 bg-warning d-flex justify-content-center align-items-center fs-4 border border-1 border-white" id="kali">x</div>
+            <div class="col-6 bg-warning d-flex justify-content-center align-items-center fs-4 border border-1 border-white" id="bagi">/</div>
+          </div>
+          <div class="row" style="height: 20%">
+            <div class="col-12 bg-info d-flex justify-content-center align-items-center fs-4 border border-1 border-white" id="mod">%</div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir button -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("tambah").addEventListener("click", jumlah);
+      document.getElementById("kurang").addEventListener("click", kurang);
+      document.getElementById("kali").addEventListener("click", kali);
+      document.getElementById("bagi").addEventListener("click", bagi);
+      document.getElementById("mod").addEventListener("click", modulus);
+
+      function jumlah(event) {
+        var num1 = parseFloat(document.getElementById("number1").value);
+        var num2 = parseFloat(document.getElementById("number2").value);
+        var result = num1 + num2;
+        let stringresult = result.toString();
+        document.getElementById("inihasil").innerHTML = stringresult;
+      }
+
+      function kurang(event) {
+        var num1 = parseFloat(document.getElementById("number1").value);
+        var num2 = parseFloat(document.getElementById("number2").value);
+        var result = num1 - num2;
+        let stringresult = result.toString();
+        document.getElementById("inihasil").innerHTML = stringresult;
+      }
+
+      function kali(event) {
+        var num1 = parseFloat(document.getElementById("number1").value);
+        var num2 = parseFloat(document.getElementById("number2").value);
+        var result = num1 * num2;
+        let stringresult = result.toString();
+        document.getElementById("inihasil").innerHTML = stringresult;
+      }
+
+      function bagi(event) {
+        var num1 = parseFloat(document.getElementById("number1").value);
+        var num2 = parseFloat(document.getElementById("number2").value);
+        var result = num1 / num2;
+        let stringresult = result.toString();
+        document.getElementById("inihasil").innerHTML = stringresult;
+      }
+
+      function modulus(event) {
+        var num1 = parseFloat(document.getElementById("number1").value);
+        var num2 = parseFloat(document.getElementById("number2").value);
+        var result = num1 % num2;
+        let stringresult = result.toString();
+        document.getElementById("inihasil").innerHTML = stringresult;
+      }
+    </script>
+  </body>
+</html>

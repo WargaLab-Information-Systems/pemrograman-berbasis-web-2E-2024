@@ -1,0 +1,13 @@
+body {
+    background: rgb(78, 113, 179);
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(46, 46, 172);
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

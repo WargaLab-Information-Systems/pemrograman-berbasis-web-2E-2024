@@ -1,0 +1,78 @@
+body, html {
+    height: 100%; /* Memastikan bahwa elemen body dan html menutupi seluruh tinggi halaman */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Mengatur font seluruh halaman */
+    background-color: #f8f9fa; /* Warna latar belakang */
+}
+
+.bg-image {
+    /* Mengatur gambar latar belakang */
+    background-image: url('th.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: -1; 
+}
+
+
+
+
+.login-container {
+    width: 300px;
+    height: auto; /* Mengubah dari 400px menjadi auto untuk menyesuaikan konten */
+    background: rgba(17, 6, 6, 0.8); /* Membuat background semi-transparent */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Melengkapi dengan aturan .card */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #0056b3; /* Menggunakan warna yang konsisten dengan .btn-primary */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #004085; /* Warna hover yang konsisten dengan .btn-primary:hover */
+}
+
+.text-decoration-none {
+    color: #0056b3; /* Aturan untuk link, mengatur warna link */
+}
+
+.text-decoration-none:hover {
+    color: #004085; /* Mengatur warna saat hover */
+}
+
+.card {
+    border-radius: 15px; /* Pembulatan border untuk kartu */
+}
+
+.btn-primary, .btn-primary:hover {
+    border-color: #004085; /* Mengatur border saat hover */
+}
+
+.table th, .table td {
+    width: auto; /* Atau tetapkan lebar spesifik jika diperlukan */
+}

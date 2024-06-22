@@ -1,0 +1,16 @@
+header {
+    background-color: greenyellow;
+}
+h1{
+    text-size-adjust: bold;
+    font-size: medium;
+    color: aliceblue;
+}
+footer{
+    background-color: greenyellow;
+    font-size: medium;
+    color:aliceblue ;
+}
+p {
+    text-align: justify;
+}

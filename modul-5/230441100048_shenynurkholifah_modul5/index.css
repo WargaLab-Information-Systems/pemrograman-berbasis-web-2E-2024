@@ -1,0 +1,24 @@
+* {
+  font-family: 'Poppins' sans-serif;
+}
+
+.container {
+  background-color: rgb(227, 49, 85);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #000000;
+}
+
+.container h1 {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.container button {
+  margin-left: 600px;
+}
+

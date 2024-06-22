@@ -1,0 +1,35 @@
+/* Style for the input fields */
+.form-control {
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the calculate button */
+.btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    border-radius: 20px;
+    padding: 12px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.5);
+}
+
+/* Style for the table */
+.table {
+    border-radius: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}

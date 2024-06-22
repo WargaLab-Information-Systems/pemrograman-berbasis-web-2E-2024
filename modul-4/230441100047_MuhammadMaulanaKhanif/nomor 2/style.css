@@ -1,0 +1,111 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-image: url(asset/bg.jpg);
+  background-size: cover;
+  width: 100vh;
+  height: 100vh;
+  display: grid;
+  background-color: tomato;
+  align-items: center;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 20rem;
+  height: 30rem;
+  background: #b2b2b28c;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  justify-self: center;
+  margin-left: 500px;
+}
+
+.container #Inputan {
+  width: 75%;
+  height: 2rem;
+  float: left;
+  margin-left: 1rem;
+  border-radius: 8px 0 0 8px;
+  border: 0;
+}
+.list {
+  width: 110vh;
+  height: 300px;
+  overflow-y: scroll;
+  margin-top: 5rem;
+}
+
+.container .add {
+  background-color: yellow;
+  padding: 9px;
+  height: 1rem;
+  margin: 0;
+  float: left;
+  border-radius: 0 5px 5px 0;
+  font-size: 10px;
+}
+
+ul {
+  width: 80%;
+  height: fit-content;
+  /* background-color: aqua; */
+  float: left;
+
+  margin-left: 0;
+}
+ul li {
+  width: 300px;
+  list-style-type: none;
+  text-align: center;
+  background: #f3f3f38c;
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  margin-left: -35px;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+ul span {
+  background-color: red;
+  padding: 0 15px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+}
+
+ul li.checked {
+  background: #888;
+  color: black;
+  text-decoration: line-through;
+}
+
+ul li input,
+ul li input:focus {
+  border: none;
+  outline: none;
+  background: none;
+  /* backdrop-filter: blur(10px); */
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        font-size: 20px;
+        padding: 10px;
+        background: red;
+      }
+
+      .header {
+        /* padding: 30px; */
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      .top-nav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .top-nav a {
+        /* float: left; */
+        display: block;
+        /* color: #f2f2f2; */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .top-nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .left-column {
+        float: left;
+        width: 75%;
+      }
+
+      .right-column {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      .fakeimg {
+        background-color: red;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .Footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .left-column,
+        .right-column {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .top-nav a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      img:hover {
+        opacity: 0.8;
+      }
+
+      /* li {
+        float: left;
+      } */
+
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+
+      li.dropdown {
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 0;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: red;
+        opacity: 0.8;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="color: red">LIVERPOOL FC</h1>
+      <!-- <p></p> -->
+    </div>
+
+    <div class="top-nav">
+      <li class="dropdown">
+        <!-- <a href="#">NEWS</a> -->
+        <a href="javascript:void(0)" class="dropbtn">NEWS</a>
+        <div class="dropdown-content">
+            <!-- <h5>NEWS</h5> -->
+          <a href="#">All News</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Academy</a>
+          <a href="#">Club</a>
+          <a href="#">Media Watch</a>
+          <a href="#">Tickets</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a  href="javascript:void(0)" class="dropbtn">FIXTURE & TEAM</a>
+        <div class="dropdown-content">
+            <!-- <h5>FIXTURE & TEAM</h5> -->
+            <h5>Mens</h5>
+            <a href="#">Fixtures </a>
+            <a href="#">Results</a>
+            <a href="#">Tables</a>
+            <a href="#">Match Centre</a>
+            <a href="#">Players & Staff</a>
+            <a href="#"> Stats</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">TICKETS & BOOKING</a>
+        <div class="dropdown-content">
+            <!-- <h5>TICKETS & BOOKING</h5> -->
+            <h5>Tickets</h5>
+          <a href="#">Tickets Availability</a>
+          <a href="#">How To Buy Tickets</a>
+          <a href="#">Away Travel</a>
+          <a href="#">Women's Team Tickets </a>
+          <a href="#">Players & Staff</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">SHOP</a>
+        <div class="dropdown-content">
+            <!-- <h5>SHOP</h5> -->
+            <a href="#">Men's Home Kit</a>
+            <a href="#">Men's Away Kit</a>
+            <a href="#">Men's Third Kit</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">VIDEO</a>
+        <div class="dropdown-content">
+          <a href="#">Matches</a>
+          <a href="#">Players</a>
+          <a href="#">Browse</a>
+          <a href="#">Playlists</a>
+          <a href="#">Live</a>
+        </div>
+      </li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">MORE</a>
+        <div class="dropdown-content">
+            <h5>Anfield</h5>
+            <a href="#">Match Day</a>
+            <a href="#">Local Residents</a>
+            <a href="#">Anfield Road</a>
+            <a href="#">Champions Wall</a>
+            <a href="#">Disabled Supporters Association</a>
+            <a href="#">Supporter Liaison Officer</a>
+            <a href="#">Official Supporters Clubs</a>
+        </div>
+      </li>
+
+      <!-- <a href="#">FIXTURE & TEAM</a>
+      <a href="#">TICKETS & BOOKING</a>
+      <a href="#">SHOP</a>
+      <a href="#">VIDEO</a>
+      <a href="#">MORE</a>
+    </div> -->
+
+    <div class="row">
+      <div class="left-column">
+        <div class="card">
+          <h2>
+            Check out 13 interesting statistics ahead of Liverpool's Premier
+            League meeting with Brighton & Hove Albion.
+          </h2>
+          <h5>Liverpool FC, Mar 29, 2024</h5>
+          <div class="fakeimg" style="height: 430px; width: 740px">
+            <img
+              style="width: 700px"
+              src="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-03/mohamed-salah-brighton-liverpool-280324_0.webp?itok=CNa8Q6e7&width=1680"
+              alt=""
+            />
+          </div>
+          <p>
+            The Reds return from the international break on Sunday afternoon
+            with a 2pm BST kick-off against Roberto De Zerbi's Seagulls at
+            Anfield. Read our pick of the best pre-match facts and figures… A
+            win would see Liverpool record their 300th victory under Jürgen
+            Klopp in all competitions. Klopp's men have scored 120 goals this
+            season in their 46 games. It's already the joint-sixth-highest
+            number of goals netted in a season in the club's history, with a
+            minimum of 12 games left to play. The Reds have scored 73 goals in
+            their 23 Anfield matches so far this season. By comparison, they
+            netted 56 in 25 home games in 2022-23.
+          </p>
+          <p>
+            Liverpool have failed to score in only one home match in the last 14
+            months (33 games), the goalless draw with Manchester United back in
+            December. The Reds have won their last three fixtures on March 31 by
+            a 2-1 scoreline (2013, 2018 and 2019) and have won each of the last
+            nine on the final day of March. Mohamed Salah has scored more goals
+            against Brighton (eight in 14 appearances) than any other Liverpool
+            player in history. Salah can make a club-record 15th outing against
+            the Seagulls. Alexis Mac Allister, who played 112 times for
+            Brighton, has scored in each of his last three appearances for
+            Liverpool.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>
+            Jürgen Klopp has provided an update on the fitness of his squad
+            ahead of Sunday’s clash with Brighton & Hove Albion, including
+            initial news on Andy Robertson
+          </h2>
+          <h5>liverpool FC, Mar 30, 2024</h5>
+          <div class="fakeimg" style="height: 430px; width: 740px">
+            <img
+              style="width: 700px"
+              src="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-03/andy-robertson-29032024.webp?itok=xrMYy5BR&width=1680"
+              alt=""
+            />
+          </div>
+          <p>
+            Liverpool left-back Robertson was withdrawn during the first half of
+            Scotland’s friendly against Northern Ireland on Tuesday night with
+            an apparent ankle complaint. Offering the latest at his pre-match
+            press conference this afternoon, Klopp said: “Robbo, we take it a
+            little bit day by day so we will see. “He will not train today but
+            it’s not as bad. So that’s fine.” Elsewhere, Curtis Jones is
+            returning to training, while Ibrahima Konate and Darwin Nunez are
+            both fine ahead of the Premier League visit of the Seagulls.
+            “Curtis, I am not sure if he is available [for Sunday], but in
+            training,” said the manager. “Ibou was an extra rest day [on
+            Thursday], nothing else. “[Nunez] is fine. He did his rehab during
+            the week, trained the first day partially since we are back
+            partially and since then he is in full training.” Asked about the
+            respective recoveries of Alisson Becker, Trent Alexander-Arnold and
+            Diogo Jota, he added: “And the other boys, from next week on step by
+            step I think they will join parts of team training and then team
+            training, so we will see what we do with that. “They are not too far
+            away but not in yet, none of them was yet even close to team
+            training. But they all make their steps and so it’s positive.”
+          </p>
+          <p>
+            Klopp was also asked about Stefan Bajcetic’s progress in his
+            long-term fitness rehabilitation and if the No.43 has been able to
+            use the time on the sidelines beneficially in other ways. “Football
+            brain-wise he is a natural so I don’t think he lost anything. But
+            rhythm is something else,” he replied. “He is now in partial
+            training with the U21s and he will be in full training with the U21s
+            next week because we pretty much don’t train because we play all the
+            time. Then after that he will join our training. That’s the plan and
+            then we will see. “But the boy grew, put a few muscles on, looks
+            good. Conor Bradley didn’t need long after he was out for a long,
+            long time as well. He is a smart kid so I think he will be fine, but
+            what do I know? I’ve never been that long injured in that age group.
+          </p>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height: 200px">
+            <img
+              style="height: 160px; width: 260px; margin-left: 25px"
+              src="data:image/jpeg;base64,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">
+          </div>
+          <p>
+            Inside Wembley: Best views and celebrations from Liverpool's 10th
+            League Cup win
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Popular post</h3>
+          <div class="fakeimg">
+            <p style="text-align: center; color: white">
+              <img
+                style="height: 100px; width: 250px; margin-left: 25px"
+                src="https://backend.liverpoolfc.com/sites/default/files/styles/md/public/2024-03/klopp-torres-lijnders.webp?itok=pR0xgR8l&width=1680"
+                alt=""
+              />
+              Former Liverpool striker Fernando Torres paid a special visit to
+              the AXA Training Centre on Friday to take in the work of Jürgen
+              Klopp and his coaching staff.
+            </p>
+          </div>
+
+          <div class="fakeimg">
+            <p style="text-align: center; color: white">
+              <img
+                style="height: 100px; width: 250px; margin-left: 25px"
+                src="https://backend.liverpoolfc.com/sites/default/files/styles/lg/public/2024-03/klopp-press-conference-290324.webp?itok=6J8qXF3W&width=1680"
+                alt=""
+              />
+              Jürgen Klopp analysed the 'super-interesting' challenges his
+              Liverpool side will face when they come up against Brighton & Hove
+              Albion on Sunday.
+            </p>
+          </div>
+
+          <div class="fakeimg">
+            <p style="text-align: center; color: white">
+              <img
+                style="height: 100px; width: 250px; margin-left: 25px"
+                src="https://backend.liverpoolfc.com/sites/default/files/styles/lg/public/2024-02/carabao-cup-anfield-viewing-27022024.webp?itok=gwDMfhKg&width=1680"
+                alt=""
+              />
+              Liverpool fans will have the opportunity to see the Carabao Cup at
+              Anfield and get photos with the Reds’ latest piece of silverware,
+              from this weekend.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="text-align: center">Follow Social Media:</h3>
+          <p style="text-align: center">
+            instagram =
+            <a  class="sosmed"
+              href="https://www.instagram.com/liverpoolfc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              >liverpoolfc</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Footer">
+      <h5>
+        © COPYRIGHT 2024 THE LIVERPOOL FOOTBALL CLUB AND ATHLETIC GROUNDS
+        LIMITED. ALL RIGHTS RESERVED. MATCH STATISTICS SUPPLIED BY OPTA SPORTS
+        DATA LIMITED. REPRODUCED UNDER LICENCE FROM FOOTBALL DATACO LIMITED. ALL
+        RIGHTS RESERVED.
+      </h5>
+    </div>
+  </body>
+</html>

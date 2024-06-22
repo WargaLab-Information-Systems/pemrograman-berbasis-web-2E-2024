@@ -1,0 +1,32 @@
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.slider-content {
+    height: 750px;
+    object-fit: cover;
+}
+
+.container h3 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.img-card {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card p {
+    text-align: justify;
+}

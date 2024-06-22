@@ -1,0 +1,94 @@
+.navbar {
+    background-color: #07c900; 
+  }
+  
+  .navbar-brand h2 {
+    color: #ffffff;
+    margin: 3%;
+    font-style: bold;
+
+  }
+  
+  .navbar-nav .nav-link {
+    padding : 2px:
+    color: #00ff15;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+  }
+  
+  .container-fluid .bg-secondary {
+    background-color: #f8f9fa; 
+  }
+  
+  .container-fluid h2 {
+    color: #212529; 
+  }
+  
+  .container-fluid p {
+    color: #495057; 
+  }
+  
+  .col-6 img {
+    border-radius: 10px;
+    padding-top: 15px; 
+  }
+  
+  .col-6 p {
+    color: #6c757d; 
+  }
+  .col-6 h1 {
+    color: #212529;
+  }
+  
+  .col-6 h3 {
+    color: #007bff;
+  }
+  
+  .col-6 ul {
+    list-style-type: none; 
+    padding-left: 0
+  }
+  
+  .col-6 ul li {
+    margin-bottom: 10px; 
+  }
+  .header-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom : 20px;
+  }
+  .header-card h3 {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    
+  }
+
+  .header-card ul {
+    list-style-type: none;
+    padding: 10;
+  }
+
+  .header-card li {
+    margin-bottom: 10px;
+  }
+.placeholder-glow {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
+    to {
+        box-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+    }
+}
+
+.placeholder {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}

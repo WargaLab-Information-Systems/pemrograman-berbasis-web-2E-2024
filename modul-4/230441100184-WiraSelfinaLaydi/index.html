@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 4</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="home">Home</a>
+      <a href="#" class="home">Beranda</a>
+      <div class="dropdown">
+        <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Mamalia</button>
+        <div id="buahDropdown" class="dropdown-content">
+          <a href="#">Paus</a>
+          <a href="#">Surya</a>
+          <a href="#">Singa</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button onclick="toggleDropdown('myDropdown')" class="dropbtn">Makanan</button>
+        <div id="sayurDropdown" class="dropdown-content">
+          <a href="#">Martabak</a>
+          <a href="#">Sate</a>
+          <a href="#">Nasi Padang</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container">
+        <div id="newtask">
+          <h2>to-do list here</h2>
+            <input type="text" placeholder="Task to be done..">
+            <button id="push" class="push"><i class="fas fa-plus"></i></button>
+        </div>
+        <div id="tasks"></div>
+        <div class="task">
+          <span class="taskname">belajar JavaScript</span>
+          <button class="edit"><i class="fas fa-edit"></i></button>
+          <button class="delete"><i class="fas fa-trash"></i></button>
+          <button class="completed"><i class="fas fa-check-square"></i></button>
+
+      </div>
+      <div class="task">
+          <span class="taskname">Membuat To-do List</span>
+          <button class="edit"><i class="fas fa-edit"></i></button>
+          <button class="delete"><i class="fas fa-trash"></i></button>
+          <button class="completed"><i class="fas fa-check-square"></i></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #95ac9c;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  background-color: #567b70;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #dee2df;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+
+.header {
+  background-color: #95ac9c;
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h4 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #567b70;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px; /* Menambahkan jarak antara tombol */
+}
+
+.button:hover {
+  background-color: #567b70;
+}

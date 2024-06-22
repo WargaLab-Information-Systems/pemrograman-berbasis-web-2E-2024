@@ -1,0 +1,89 @@
+body{
+    background-image: none;
+    color: #8b0606;
+}
+.gambar {
+    height: 70vh;
+    background-image: url('Carhartt WIP.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.gambar h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+}
+.container .gambar h2{
+    padding: 10px 20px;
+    border: 3px solid;
+}
+nav {
+    background-color: #8b0606;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff8686;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.column {
+    float: left;
+    width: 100%;
+    padding: 8px;
+    color: #8b0606;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: rgb(255, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}

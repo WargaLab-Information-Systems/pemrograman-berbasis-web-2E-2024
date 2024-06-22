@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d2e998;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ba6868;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#mountain-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+/* Style untuk setiap kartu gunung */
+.card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #d55f5f;
+  border-radius: 5px;
+}
+
+/* Style untuk gambar gunung */
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Style untuk judul gunung */
+.card h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Style untuk informasi gunung */
+.card p {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+#info-container {
+  border: 1px solid #cb5a5a;
+  padding: 20px;
+  margin-top: 20px;
+}

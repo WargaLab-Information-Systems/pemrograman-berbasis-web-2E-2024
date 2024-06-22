@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgmain: #2a2a2a;
+  --bgsec: greenyellow;
+  --txtmain: #000;
+  --txtsec: #fff;
+}
+
+/* index.php */
+
+div.hal-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div.hal-1 main.container form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgmain);
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+div.hal-1 main.container form h2 {
+  font-size: 3rem;
+  color: var(--bgsec);
+  padding-bottom: 20px;
+}
+
+div.hal-1 main.container form p {
+  font-size: 1.5rem;
+  color: var(--txtsec);
+  padding-bottom: 20px;
+}
+
+div.hal-1 main.container form label {
+  font-size: 1.5rem;
+  color: var(--txtsec);
+  padding-bottom: 5px;
+}
+
+div.hal-1 main.container form input:not(input[type="submit"]) {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+div.hal-1 main.container form input[type="submit"] {
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+div.hal-1 main.container form input[type="submit"]:hover {
+  background-color: var(--bgsec);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/* app.php */
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgmain);
+  height: 60px;
+  padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  gap: 40px;
+}
+
+nav.navbar ul li a {
+  text-decoration: none;
+  color: var(--txtsec);
+  font-size: 1.2rem;
+}
+
+nav.navbar ul li a:hover {
+  color: var(--bgsec);
+}
+
+nav.navbar button {
+  background-color: var(--bgsec);
+  color: var(--txtmain);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav.navbar button a {
+  text-decoration: none;
+  color: var(--txtmain);
+}
+
+h2.welcome {
+  font-size: 3rem;
+  color: var(--txtsec);
+  filter: drop-shadow(0 0 10px var(--bgsec));
+  padding-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(0);
+}
+
+h3.name {
+  font-size: 3rem;
+  color: var(--txtsec);
+  filter: drop-shadow(0 0 10px var(--bgsec));
+  padding-bottom: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* isidatamhs.php */
+
+.main {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--bgmain);
+  height: 100vh;
+}
+
+.main .field-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main .field-input input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid var(--bgsec);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main .field-input button {
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main .data table,
+.main .data table tr,
+.main .data table td, 
+.main .data table th {
+  color: var(--txtsec);
+  text-align: center;
+  height: 50px;
+  position: relative;
+}
+
+.main .data table td div.edit {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: var(--bgsec);
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+.main .data table td div.delete {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: red;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}

@@ -1,0 +1,38 @@
+body {
+    /* background-color: black; */
+    background-image: url(retro.jpg);
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+table {
+    background-color: rgb(91, 44, 91);
+
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: rgb(46, 42, 42);
+    /* padding-right: 2px; */
+    padding: 7px;
+    text-align: center;
+    /* margin: auto; */
+    width: 120px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.a hapus {
+    text-align: center;
+}
+

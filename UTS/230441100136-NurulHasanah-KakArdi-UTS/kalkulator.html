@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+    <link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="foto.jpg" >
+        </nav>
+        <h1>==== Kalkulator ====</h1>
+        <div class="form-group">
+            <label for="angka1">Angka Pertama : </label>
+            <input type="number" id="angka1" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="operator">Operator : </label>
+            <select id="operator" class="form-control">
+                <option value="penjumlahan">Penjumlahan (+)</option>
+                <option value="pengurangan">Pengurangan (-)</option>
+                <option value="perkalian">Perkalian (*)</option>
+                <option value="pembagian">Pembagian (/)</option>
+                <option value="modulus">Modulus (%)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="angka2">Angka Kedua : </label>
+            <input type="number" id="angka2" class="form-control">
+        </div>
+        <div class="button">
+            <button onclick="hitung()" class="btn btn-primary">Hitung</button>
+        </div>
+    
+        <div class="tabel">
+            <h2>Hasil Perhitungan</h2>
+        <table>
+            <thead>
+            <tr class="tabel">
+                <th>No</th>
+                <th>Nama User</th>
+                <th>Angka 1</th>
+                <th>Operator</th>
+                <th>Angka 2</th>
+                <th>Hasil Perhitungan</th>
+            </tr>
+            </thead>
+            <tbody id="hasil-perhitungan"></tbody>
+        </table>
+        </div>
+        <br><br><br>
+    </div>
+    
+      <script>
+        var perhitungan = [];
+        function hitung() {
+            var angka1 = parseFloat(document.getElementById('angka1').value);
+            var angka2 = parseFloat(document.getElementById('angka2').value);
+            var operator = document.getElementById('operator').value;
+            var hasil;
+    
+            switch(operator) {
+                case 'penjumlahan':
+                hasil = angka1 + angka2;
+                break;
+                case 'pengurangan':
+                hasil = angka1 - angka2;
+                break;
+                case 'perkalian':
+                hasil = angka1 * angka2;
+                break;
+                case 'pembagian':
+                hasil = angka1 / angka2;
+                break;
+                case 'modulus':
+                hasil = angka1 % angka2;
+                break;
+            }
+            
+            perhitungan.push({
+                angka1: angka1,
+                operator: operator,
+                angka2: angka2,
+                hasil: hasil
+            });
+
+            tampilkanPerhitungan();
+        }
+
+        function tampilkanPerhitungan() {
+            var tabelHTML = '';
+            for (var i = 0; i < perhitungan.length; i++) {
+                tabelHTML += '<tr>';
+                tabelHTML += '<td>' + (i + 1) + '</td>';
+                tabelHTML += '<td>Admin</td>';
+                tabelHTML += '<td>' + perhitungan[i].angka1 + '</td>';
+                tabelHTML += '<td>' + perhitungan[i].operator + '</td>';
+                tabelHTML += '<td>' + perhitungan[i].angka2 + '</td>';
+                tabelHTML += '<td>' + perhitungan[i].hasil + '</td>';
+                tabelHTML += '</tr>';
+            }
+            document.getElementById('hasil-perhitungan').innerHTML = tabelHTML;
+        }
+      </script>
+</body>
+</html>

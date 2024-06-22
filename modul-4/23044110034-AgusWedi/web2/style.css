@@ -1,0 +1,47 @@
+html {
+  font: 300 2ch/1.2 'Segoe UI';
+}
+
+legend {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+li {
+  height: 2.4rem;
+}
+
+li::marker {
+  font-size: 1.2rem;
+  line-height: 1
+}
+
+li * {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+li p {
+  padding: 2px 6px 3.5px;
+  border-radius: 2px;
+}
+
+[contenteditable] {
+  background: rgba(0, 0, 0, 0.5);
+  color: gold;
+}
+
+.hide {
+  display: none
+}
+

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('daun.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    color: red;
+}
+
+.center {
+    text-align: center; /* Memposisikan tulisan "Login" dan pesan error ke tengah */
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="submit"] {
+    width: calc(100% - 24px); /* Penyesuaian untuk lebar input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 0; /* Margin kiri dihapus */
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    margin-top: 5px; /* Margin atas untuk input */
+}
+
+.input-group input[type="submit"] {
+    background-color: #021f07;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #052a27;
+}

@@ -1,0 +1,68 @@
+body{
+    background-color: black;
+}
+
+.pa0{
+    padding: 0px;
+    margin: 0px;
+}
+
+.pa1{
+    background-color: #FF69B4;
+    width: 100%;
+    height: 120px;
+}
+
+nav {
+    height:50px;
+    background-color: #FF69B4;
+    line-height:65px;
+    position:relative;
+    width:100%;
+    margin:0;
+}
+ 
+nav ul {
+    list-style:none;
+}
+nav ul li a {
+    float:left;
+    width:150px;
+    color:#110808;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+}
+nav ul li a:hover {
+    background-color:#FFB6C1;
+    display:block;
+}
+ /*css untuk menu hover dropdown*/
+ nav ul li:hover .sub1 {display:block}
+ nav ul .sub1 {
+    display:none;
+    position:absolute;
+    left:150px;
+    top:50px;
+    background-color:#FFE4E1;
+ }
+ .sub1 a:hover { color:#fff }
+
+ .foto {
+    width:100%;
+ }
+
+ .ak {
+    width: 100%;
+    bottom: 0px;
+    background-color:rgb(243, 242, 208);
+    height: 50px;
+    /* z-index: 1; */
+}
+.ak h3 {
+    color: rgb(1, 1, 1);
+}
+
+.foto {
+    text-align: center;
+}

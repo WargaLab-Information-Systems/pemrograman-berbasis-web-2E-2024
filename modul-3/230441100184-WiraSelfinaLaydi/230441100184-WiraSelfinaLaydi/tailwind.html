@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <title>Tema Lingkungan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    /** @type {import('tailwindcss').Config} */
+    module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        'Lora':['"Lora"', 'serif'],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('laut.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    },
+  },
+  plugins: [],
+}
+  </script>
+</head>
+<body>
+  <nav class="bg-blue-100 py-4">
+    <div class="container mx-auto px-2 flex justify-between">
+      <div>
+        <h1 class="text-3x1 font-Lora">EcoEarth.</h1>
+      </div>
+      <div>
+        <ul class="flex space-x-4 text-lg font-thin">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Article</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="banner" class="bg-hero-pattern py-16">
+    <div class="container mx-auto px-2 flex">
+      <div class="flex flex-col justify-center w-1/2">
+        <div>
+          <h3 class="text-black font-semibold text-2xl">Komunitas Peduli Lingkungan</h3>
+          <h1 class="text-white text-3xl font-bold py-3">Selamat Datang ECOvers!</h1>
+          <p class="text-black pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque inventore,
+            molestiae doloribus at
+            numquam obcaecati velit consequatur iure, dolores minus suscipit nulla voluptas maxime labore. Cum quos
+            perspiciatis maiores quasi.</p>
+          <a href="#"
+            class="bg-blue-900 text-white inline-block px-6 py-2 rounded-lg hover:bg-blue-800">Selengkapnya!</a>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <img src="dribble-removebg-preview.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="latest-courses" class="py-16">
+    <div class="container mx-auto px-2">
+      <h2 class="text-3xl font-bold mb-10 text-center">Seputar Lingkungan</h2>
+      <div class="flex gap-6 object-fill">
+        <div class="w-1/3 shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892207/EducationHub/photos/recyclable-waste-philippines.jpg"
+            class="object-cover">
+          <div class="px-4 py-6">
+            <h4 class="font-bold mb-2">Here's Where the Ocean's Trash Comes From</h4>
+            <p class="mb-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt neque
+              qui dolorem, hic doloribus
+              dolor quisquam illo excepturi! Perferendis consectetur obcaecati delectus inventore cupiditate fugit
+              quisquam sunt eaque corrupti.</p>
+            <a href="https://education.nationalgeographic.org/resource/heres-where-oceans-trash-comes/"
+              class="bg-blue-500 inline-block px-4 py-2 text-sm text-white rounded-lg hover:bg-blue-400">Baca
+              Artikel</a>
+          </div>
+        </div>
+        <div class="w-1/3 shadow-lg rounded-lg overflow-hidden">
+          <img src="https://i.natgeofe.com/n/339bdb55-5b6a-4ca6-b342-d32489c6c7f1/01-ocean-plastics_3x2.jpg?w=718&h=479"
+            class="object-cover">
+          <div class="px-4 py-6">
+            <h4 class="font-bold mb-2">Plastic trash flowing into the seas will nearly triple by 2040 without drastic
+              action</h4>
+            <p class="mb-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt neque
+              qui dolorem, hic doloribus
+              dolor quisquam illo excepturi! Perferendis consectetur obcaecati delectus inventore cupiditate fugit
+              quisquam sunt eaque corrupti.</p>
+            <a href="https://www.nationalgeographic.com/science/article/plastic-trash-in-seas-will-nearly-triple-by-2040-if-nothing-done"
+              class="bg-blue-500 inline-block px-4 py-2 text-sm text-white rounded-lg hover:bg-blue-400">Baca
+              Artikel</a>
+          </div>
+        </div>
+        <div class="w-1/3 shadow-lg rounded-lg overflow-hidden">
+          <img src="https://chinadialogueocean.net/content/uploads/2021/01/01-cover-image-1024x512.png"
+            class="object-cover">
+          <div class="px-4 py-6">
+            <h4 class="font-bold mb-2">How does plastic pollution affect the ocean?</h4>
+            <p class="mb-2 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt neque
+              qui dolorem, hic doloribus
+              dolor quisquam illo excepturi! Perferendis consectetur obcaecati delectus inventore cupiditate fugit
+              quisquam sunt eaque corrupti.</p>
+            <a href="https://chinadialogueocean.net/en/pollution/14200-how-does-plastic-pollution-affect-the-ocean/"
+              class="bg-blue-500 inline-block px-4 py-2 text-sm text-white rounded-lg hover:bg-blue-400">Baca
+              Artikel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-900 py-12 rounded-md">
+    <div class="container mx-auto px-2 text-white">
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Social Media</h2>
+          <div class="wrapper-icon flex space-x-1">
+            <a href="#"><img src="icons8-facebook-50.png" width="30"></a>
+            <a href="#"><img src="icons8-instagram-50.png" width="30"></a>
+            <a href="#"><img src="icons8-youtube-48.png" width="30"></a>
+          </div><br>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Learn More About Us</h2>
+          <ul class="ml-20">
+            <li><a href="">Home</a></li>
+            <li><a href="">Donate</a></li>
+            <li><a href="">Article</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-3xl font-semibold font-Lora mb-2 text-black">EcoEarth.</h2>
+          <p class="font-serif text-sm">Copyright by someone on youtube</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="ToDo.css">
+</head>
+<body background="ltrpres.jpg">
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Beranda</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">tentang</button>
+            <div class="dropdown-content">
+                <a href="#">status</a>
+                <a href="#">pendidikan</a>
+                <a href="#">asal</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">profile</button>
+            <div class="dropdown-content">
+                <a href="#">prestasi</a>
+                <a href="#">riwayat</a>
+                <a href="#">sejarah</a>
+            </div>
+        </div>
+
+    </div>
+    
+   <div class="container">
+        <div class="todo-app">
+            <h2>To-Do list <img src="nv.jpg" alt="Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+   </div> 
+   
+   <script src="javaScript.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik dan Saran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <ul>
+                <li><a href="utama.html">Beranda</a></li>        
+        </ul>
+    </nav>
+    <h2>Formulir Kritik dan Saran</h2>
+
+    <form id="kritikForm" action="proses-kritik.php" method="post" onsubmit="return validateForm()">
+        <table border="1px">
+            <tr>
+                <th>Nama</th>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Kritik/Saran</th>
+                <td><textarea id="kritik_saran" name="kritik_saran" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Kirim"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function validateForm() {
+            var nama         = document.getElementById("nama").value;
+            var email        = document.getElementById("email").value;
+            var kritik_saran = document.getElementById("kritik_saran").value;
+
+            if (nama == "" || email == "" || kritik_saran == "") {
+                alert("Semua kolom harus diisi");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+

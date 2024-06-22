@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6600ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="date"],
+        form input[type="email"],
+        form select,
+        form textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #7700ff;
+            border-radius: 5px;
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        form input[type="submit"],
+        form input[type="reset"],
+        form button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        form button a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        form button a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Biodata Diri</h1>
+    <form id="biodataForm" method="post">
+        <label for="nama_lengkap">Nama lengkap:</label>
+        <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Silahkan isi nama"><br>
+        <label for="Nim_anda">NIM:</label>
+        <input type="text" id="Nim_anda" name="Nim_anda" placeholder="Silahkan isi NIM"><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="1">Pelajar</option>
+            <option value="2">Mahasiswa</option>
+            <option value="3">Sudah Menikah</option>
+            <option value="2">Pengangguran wkwk</option>
+        </select><br>
+        <label for="fakultas">Fakultas:</label>
+        <input type="text" id="fakultas" name="fakultas" placeholder="Silahkan isi fakultas"><br>
+        <label for="prodi">Prodi:</label>
+        <input type="text" id="prodi" name="prodi" placeholder="Silahkan isi prodi"><br>
+        <label for="angkatan">Angkatan:</label>
+        <input type="number" id="angkatan" name="angkatan"><br>
+        <label for="tempat">Tempat lahir:</label>
+        <input type="text" id="tempat" name="tempat" placeholder="Silahkan isi tempat"><br>
+        <label for="tanggal_lahir">Tanggal lahir:</label>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir"><br>
+        <label for="agama">Agama:</label>
+        <select id="agama" name="agama">
+            <option value="1">Kristen</option>
+            <option value="2">Islam</option>
+            <option value="3">Hindu</option>
+            <option value="3">Budha</option>
+            <option value="4">Gak punya agama</option>
+        </select><br>
+        <label for="Alamat_anda">Alamat:</label>
+        <input type="text" id="Alamat_anda" name="Alamat_anda" placeholder="Silahkan isi Alamat Anda"><br>
+        <label for="Hobi_anda">Hobi:</label>
+        <input type="text" id="Hobi_anda" name="Hobi_anda" placeholder="Silahkan isi Alamat Anda"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Silahkan isi email"><br>
+        <label for="jenis_kelamin">Jenis kelamin:</label>
+        <input type="radio" id="jenis_kelamin_pria" name="jenis_kelamin" value="pria"><label for="jenis_kelamin_pria">Pria</label>
+        <input type="radio" id="jenis_kelamin_wanita" name="jenis_kelamin" value="wanita"><label for="jenis_kelamin_wanita">Wanita</label><br>
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto">
+        <br><br>
+        <input type="submit" value="Tambah">
+        <input type="reset" value="Reset"><br>
+        <button><a href="Halaman2.html">Back</a></button>
+    </form>
+</body>
+</html>

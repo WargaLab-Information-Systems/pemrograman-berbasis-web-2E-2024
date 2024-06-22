@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Teman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            height: 75%;
+            width: 60%;
+            border-collapse: collapse;
+        }
+        th {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 7px;
+        }
+        td {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 7px;
+            text-align: left;
+        }
+        .tombol-next {
+            position: absolute;
+            bottom: 40px; 
+            right: 40px; 
+        }
+        .tombol-prev {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body background="background5.jpg">
+    <table>
+        <tr>
+            <th rowspan="2">Nama</th>
+            <th rowspan="2">NIM</th>
+            <th colspan="2">Tugas
+            </th>
+            <th rowspan="2">Asprak</th>
+        </tr>
+        <tr>
+            <td><b>Project</b></td>
+            <td><b>Lapres</b></td>
+        </tr>
+        <tr>
+            <td>Agus Wedi </td>
+            <td>230441100034</td>
+            <td>belum</td>
+            <td>sudah</td>
+            <td rowspan="2">Kak Tamam</td>
+        </tr>
+        <tr>
+            <td>Muhammad Miftahul Faizin </td>
+            <td>230441100050</td>
+            <td>sudah</td>
+            <td>belum</td>
+        </tr>
+        <tr>
+            <td>Yahya Ahmad </td>
+            <td>230441100079</td>
+            <td>sudah</td>
+            <td>sudah</td>
+            <td rowspan="2">Kak Ardi</td>
+        </tr>
+        <tr>
+            <td>A. Mujaddid Bilhaq</td>
+            <td>230441100137</td>
+            <td>sudah</td>
+            <td>belum</td>
+        </tr>
+        <tr>
+            <td>R. Rifqi Nova Khairifo </td>
+            <td>230441100153</td>
+            <td>belum</td>
+            <td>belum</td>
+            <td rowspan="2">Kak Dhea</td>
+        </tr>
+        <tr>
+            <td>Shahaf Lanjaya Putra Mujiono</td>
+            <td>230441100166</td>
+            <td>sudah</td>
+            <td>belum</td>
+        </tr>
+        <!-- Tambahkan baris lainnya sesuai dengan daftar teman -->
+    </table>
+    <div class="tombol-next">
+        <button onclick="document.location='modul 1 hal 3.html'" style="width: 60px; height: 45px;">next</button>
+    </div>
+    <div class="tombol-prev">
+        <button onclick="document.location='modul 1 hal 1.html'" style="width: 60px; height: 45px;">prev</button>
+
+    </div>
+</body>
+</html>

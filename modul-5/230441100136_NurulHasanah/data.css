@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(p.png);
+    background-size: cover; 
+    color: #fff; 
+}
+
+.data {
+    width: 75%; 
+    margin: 100px auto;
+    padding: 20px; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+table, th, td {
+    border: 1px solid #fff; 
+}
+
+th, td {
+    padding: 10px; 
+    text-align: left;
+}
+
+h2 {
+    color: #fff;
+}
+
+.post{
+    border-radius: 20px; 
+}

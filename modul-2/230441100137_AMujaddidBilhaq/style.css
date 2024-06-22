@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar ul li a:hover {
+  color: black;
+  background-color: rgb(174, 255, 0);
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px; */
+  padding-top: 14px;
+  padding-bottom: 12px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content p {
+  color: black;
+}
+
+/* Navbar */
+nav.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(205, 255, 124);
+  padding: 10px 20px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+}
+div.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.logo img {
+  width: 60px;
+  background-repeat: no-repeat;
+}
+.logo p {
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.navbar ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: white;
+}
+.navbar li {
+  font-size: 1.4rem;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+div.main-content img {
+  width: 100%;
+  height: 89vh;
+}
+
+/* sejarah.html */
+
+nav.sejarah-conten1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "arial";
+}
+nav.sejarah-conten1 img {
+  width: 200px;
+  height: 200px;
+}
+
+div.footer {
+  background-color: rgb(205, 255, 124);
+  color: black;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: auto;
+}

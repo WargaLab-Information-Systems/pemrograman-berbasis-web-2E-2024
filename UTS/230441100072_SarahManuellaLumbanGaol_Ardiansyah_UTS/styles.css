@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgb(233, 215, 217) 0%,
+    rgb(159, 207, 127) 100%
+  );
+}
+
+.login-container,
+.calculator {
+  width: 500px;
+  margin: 100px auto;
+  background-color: rgb(255, 239, 239);
+  border-radius: 10%;
+  padding: 20px;
+  box-shadow: 0 0 16px blue;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+#result-container {
+  margin-top: 20px;
+}
+
+#result-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#result-table th,
+#result-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#result-table th {
+  background-color: #f2f2f2;
+}

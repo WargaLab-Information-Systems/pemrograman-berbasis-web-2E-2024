@@ -1,0 +1,62 @@
+body {
+    display: flex; 
+    padding: 30px 40px;
+    height: 100vh; 
+    margin: 0;
+    background-color: #1e1e61;
+  }
+.dropbtn {
+    background-color: #db3434;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #940e0e;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e66e6e;
+    padding: 15px 25px;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 7px;
+  }
+  
+  .dropdown-content form {
+    padding: 15px;
+  }
+  
+  .dropdown-content input[type="text"],
+  .dropdown-content input[type="password"],
+  .dropdown-content button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .dropdown-content input[type="text"],
+  .dropdown-content input[type="password"] {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+.dropdown-content button{
+    background-color: #4343ff;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

@@ -1,0 +1,47 @@
+*{
+    background-color: rgb(255, 224, 230);
+    background-image: url(modern.jpeg);
+    background-repeat: repeat-x;
+    padding: 0;
+    margin: 0;
+}
+/* background navigasi  */
+ul {
+    list-style: none;
+    background: #f97eb7;
+}
+/* tampilan navigasi vertikal */
+ul li {
+    display: inline-block;
+    position: relative;
+}
+/* isi navigasi */
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    /* font color */
+    color: hwb(327 56% 0%);
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* dropdown */
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    /* pop up display dropdown */
+    display: none;
+}
+/* background dropdown */
+ul li a:hover {
+    background: #f97eb7;
+}
+/* pop up dropdown */
+ul li:hover ul.dropdown {
+    display: block;
+}
