@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+    font-family: 'Poppins', sans-serif;
+========
+    font-family: 'poppins', sans-serif;
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+========
+    background: linear-gradient(135deg,#153677, #4e085f);
+    padding: 10px;    
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
+}
+/* style unutuk to do app */
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+    border-radius: 10px;
+} 
+/* Style untuk Judul */
+========
+    border-radius: 100px;
+}
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* Style untuk Ikon */
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+/* Style untuk Baris Input */
+.row{
+    display: flex;
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+    align-item: center;
+    justify-content: space-between;
+========
+    align-items: center;
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* Style untuk Input Box */
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparant;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+/* Style untuk Tombol Add */
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+/* Style untuk Tombol Edit */
+edit-btn {
+    background: #4CAF50; /* Hijau */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style untuk Daftar Tugas */
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    position: relative;
+}
+/* Style untuk Tanda Checklist */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+    background-image: url(unchecked.png);
+    background-size:cover;
+========
+    background-image: url(uncheck.png);
+    background-size: cover;
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+/* Style untuk Tugas yang Sudah Diperiksa */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+/* Style untuk Tanda Checklist pada Tugas yang Sudah Diperiksa */
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+/* Style untuk Tombol Hapus (X) */
+========
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(ceklis.png);
+}
+
+
+
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height:40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+/* Hover Style untuk Tombol Hapus */
+ul li span:hover{
+    background: #edeef0;
+<<<<<<<< HEAD:modul-4/230441100166-ShahafLanjayaPutra-Modul4-KakDhea/ToDo List/style.css
+}
+========
+
+}
+
+
+
+>>>>>>>> 0892f8efea1ad0cf6d8160562d93dc7ca5edd84a:modul-4/no2PBW/style.css
