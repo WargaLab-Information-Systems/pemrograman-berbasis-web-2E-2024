@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRL3o75754GHEAsMAm6fo19G5f9Z9OYVxi5GjvKRzOVQ&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 25px;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 35px;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgba(247, 247, 242, 0.705);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: black;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    font-size: large;
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    padding: 5px;
+}

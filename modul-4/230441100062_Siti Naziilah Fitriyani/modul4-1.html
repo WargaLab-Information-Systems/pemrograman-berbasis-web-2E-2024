@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="4-1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Visit</a>
+        <div class="menuToggle"></div> 
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li> 
+                <li><a href="#">about</a></li>
+                <li>
+                    <a href="#">explore</a>
+                    <ul>
+                        <li><a href="#">picture</a></li>
+                        <li><a href="#">jenis</a></li>
+                        <li><a href="#">profil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">pages</a>
+                    <ul>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <section class="home" id="home">
+        <div class="container">
+            <h3>Manfaat Lemon bagi kesehatan</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Incidunt veritatis aliquam sunt eligendi dicta at cupiditate,</p>
+            <p>pariatur ad rem! Amet neque illo, odit cum perspiciatis ut reiciendis</p>
+            <p>doloribus veniam tempore!</p>
+        </div>
+    </section>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
