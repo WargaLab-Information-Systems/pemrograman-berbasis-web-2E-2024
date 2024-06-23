@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Website Saya</h4>
+      </div>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+          <button onclick="toggleDropdown()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Anda butuh bantuan</a>
+            <a href="#">silahkan menghubungi kami</a>
+            <a href="#">jangan lupa terimakasih</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Selamat datang di website sederhana ini</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed a assumenda dolores eius quo velit labore ipsa eligendi, ipsam rerum! Obcaecati quae enim illo commodi expedita. Facilis est necessitatibus, sed quasi ut voluptatem id ipsa aspernatur, corporis, eaque inventore placeat dolor reprehenderit excepturi similique minus ipsam recusandae. Aliquid, repudiandae laboriosam.</p>
+    </div>
+    <div class="container">
+      <div class="box">
+          <h2>To Do List</h2>
+          <input type="text" placeholder="ketikkan disini bro....." id="inputBx">
+          <ul id="list"></ul>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player class="animation" src="https://lottie.host/d58fe363-6fa0-4b2f-b0e5-3606198e809f/ys7o3a5GB9.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+  </body>
+  </html>
