@@ -1,0 +1,46 @@
+body {
+    background-color: navy;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin: 0;
+    color: white;
+    /* background-color: ; */
+}
+
+.nav {
+    background-color: orange;
+}
+
+.col-12 {
+    background-color: orange;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    
+}
+
+.ats {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 5px;
+    background-color: navy;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.wtext{
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+
