@@ -1,0 +1,18 @@
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider-content {
+    height: 500px;
+    -o-object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    /* justify-content: center; */
+    /* gap: 5rem; */
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
