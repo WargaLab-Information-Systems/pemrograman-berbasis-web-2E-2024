@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Menyertakan Bootstrap -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Kalkulator Sederhana</h1>
+        </div>
+        <div class="form-row">
+            <div class="col-md-3">
+                <label for="num1">Angka pertama:</label>
+                <input type="number" class="form-control" id="num1" placeholder="Masukkan angka pertama">
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>pilih operasi</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="num2">Angka kedua:</label>
+                <input type="number" class="form-control" id="num2" placeholder="Masukkan angka kedua">
+            </div>
+            <div class="col-md-3 d-flex align-items-end">
+                <button class="btn btn-primary" onclick="calculate()">Hitung</button> 
+            </div>
+        </div>
+        
+        <h2 class="mt-5">Hasil Perhitungan</h2>
+        <table class="table table-bordered" id="results-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Pengguna</th>
+                    <th>Angka 1</th>
+                    <th>Operator</th>
+                    <th>Angka 2</th>
+                    <th>Hasil</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="logika.js"></script>
+</body>
+</html>
